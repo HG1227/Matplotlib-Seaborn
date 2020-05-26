@@ -1,0 +1,1586 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Matplotlib:subplots绘制多子图 · GitBook 使用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhangjikai">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="调整子图间距,调整整体空白.html" />
+    
+    
+    <link rel="prev" href="axes脊柱.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">图形设置</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    图形基础设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="figure设置.html">
+            
+                <a href="figure设置.html">
+            
+                    
+                    figure设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="中文显示问题.html">
+            
+                <a href="中文显示问题.html">
+            
+                    
+                    中文显示问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="Matplotlib刻度线的开启和关闭.html">
+            
+                <a href="Matplotlib刻度线的开启和关闭.html">
+            
+                    
+                    Matplotlib：刻度线的开启和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="MatplotlibMatplotlib 刻度线密度设置.html">
+            
+                <a href="MatplotlibMatplotlib 刻度线密度设置.html">
+            
+                    
+                    Matplotlib：刻度线密度设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="Matplotlib：tick_params.html">
+            
+                <a href="Matplotlib：tick_params.html">
+            
+                    
+                    Matplotlib：tick_params
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="Matplotlib axes脊柱_坐标轴.html">
+            
+                <a href="Matplotlib axes脊柱_坐标轴.html">
+            
+                    
+                    Matplotlib：axes脊柱(坐标轴)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="坐标轴标签设置.html">
+            
+                <a href="坐标轴标签设置.html">
+            
+                    
+                    坐标标签设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="坐标轴显示范围设置.html">
+            
+                <a href="坐标轴显示范围设置.html">
+            
+                    
+                    坐标轴显示范围设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="设置水平参考线和垂直参考线.html">
+            
+                <a href="设置水平参考线和垂直参考线.html">
+            
+                    
+                    设置水平参考线和垂直参考线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="设置平行于x轴-y轴的参考区域.html">
+            
+                <a href="设置平行于x轴-y轴的参考区域.html">
+            
+                    
+                    设置平行于x轴/y轴的参考区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="axes脊柱.html">
+            
+                <a href="axes脊柱.html">
+            
+                    
+                    axes脊柱(坐标系)设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.12" data-path="Matplotlib subplots绘制多子图.html">
+            
+                <a href="Matplotlib subplots绘制多子图.html">
+            
+                    
+                    Matplotlib:subplots绘制多子图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="调整子图间距,调整整体空白.html">
+            
+                <a href="调整子图间距,调整整体空白.html">
+            
+                    
+                    调整子图间距,调整整体空白
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="[Matplotlib 线型、标记.html">
+            
+                <a href="[Matplotlib 线型、标记.html">
+            
+                    
+                    Matplotlib：线型、标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="Matplotlib 图形填充.html">
+            
+                <a href="Matplotlib 图形填充.html">
+            
+                    
+                    Matplotlib：图形填充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="Matplotlib grid栅格设置.html">
+            
+                <a href="Matplotlib grid栅格设置.html">
+            
+                    
+                    Matplotlib:grid栅格设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="Matplotlib text注释.html">
+            
+                <a href="Matplotlib text注释.html">
+            
+                    
+                    Matplotlib text注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="Matplotlib Annotation注释.html">
+            
+                <a href="Matplotlib Annotation注释.html">
+            
+                    
+                    Matplotlib：Annotation注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" data-path="Matplotlib Legend图例.html">
+            
+                <a href="Matplotlib Legend图例.html">
+            
+                    
+                    Matplotlib:Legend 图例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="颜色库.html">
+            
+                <a href="颜色库.html">
+            
+                    
+                    颜色库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="图片保存.html">
+            
+                <a href="图片保存.html">
+            
+                    
+                    图片保存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="面向对象绘图.html">
+            
+                <a href="面向对象绘图.html">
+            
+                    
+                    面向对象绘图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基本图表</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Chapter2/">
+            
+                <a href="../Chapter2/">
+            
+                    
+                    折线图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../Chapter3/">
+            
+                <a href="../Chapter3/">
+            
+                    
+                    散点图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Chapter4/">
+            
+                <a href="../Chapter4/">
+            
+                    
+                    柱状图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../Chapter4/堆叠柱状图.html">
+            
+                <a href="../Chapter4/堆叠柱状图.html">
+            
+                    
+                    堆叠柱状图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    分类图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../Chapter5/利用plt.pcolormesh绘制分类图.html">
+            
+                <a href="../Chapter5/利用plt.pcolormesh绘制分类图.html">
+            
+                    
+                    利用plt.pcolormesh绘制分类图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../Chapter6/">
+            
+                <a href="../Chapter6/">
+            
+                    
+                    热力图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../Chapter6/热力图.html">
+            
+                <a href="../Chapter6/热力图.html">
+            
+                    
+                    热力图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">seaborn</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Chapter7/">
+            
+                <a href="../Chapter7/">
+            
+                    
+                    seaborn
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../Chapter7/Seaborn 简介.html">
+            
+                <a href="../Chapter7/Seaborn 简介.html">
+            
+                    
+                    Seaborn 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../Chapter7/Seaborn样式设置.html">
+            
+                <a href="../Chapter7/Seaborn样式设置.html">
+            
+                    
+                    Seaborn:样式设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../Chapter7/分类数据图.html">
+            
+                <a href="../Chapter7/分类数据图.html">
+            
+                    
+                    分类数据图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../Chapter7/数据集的分布.html">
+            
+                <a href="../Chapter7/数据集的分布.html">
+            
+                    
+                    数据集的分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../Chapter7/线性关系展示.html">
+            
+                <a href="../Chapter7/线性关系展示.html">
+            
+                    
+                    线性关系展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../Chapter7/构建结构化多图网格.html">
+            
+                <a href="../Chapter7/构建结构化多图网格.html">
+            
+                    
+                    构建结构化多图网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../Chapter7/控制图像的美学样式aesthetics.html">
+            
+                <a href="../Chapter7/控制图像的美学样式aesthetics.html">
+            
+                    
+                    控制图像的美学样式(aesthetics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../Chapter7/选择调色板.html">
+            
+                <a href="../Chapter7/选择调色板.html">
+            
+                    
+                    选择调色板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../Chapter7/seaborn.relplot.html">
+            
+                <a href="../Chapter7/seaborn.relplot.html">
+            
+                    
+                    seaborn.relplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../Chapter7/散点图scatterplot.html">
+            
+                <a href="../Chapter7/散点图scatterplot.html">
+            
+                    
+                    散点图scatterplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../Chapter7/折线图lineplot.html">
+            
+                <a href="../Chapter7/折线图lineplot.html">
+            
+                    
+                    折线图lineplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../Chapter7/分类图catplot.html">
+            
+                <a href="../Chapter7/分类图catplot.html">
+            
+                    
+                    分类图catplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="../Chapter7/seaborn.stripplot.html">
+            
+                <a href="../Chapter7/seaborn.stripplot.html">
+            
+                    
+                    seaborn.stripplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="../Chapter7/seaborn.swarmplot.html">
+            
+                <a href="../Chapter7/seaborn.swarmplot.html">
+            
+                    
+                    seaborn.swarmplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.15" data-path="../Chapter7/箱线图.html">
+            
+                <a href="../Chapter7/箱线图.html">
+            
+                    
+                    箱线图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.16" data-path="../Chapter7/seaborn.violinplot.html">
+            
+                <a href="../Chapter7/seaborn.violinplot.html">
+            
+                    
+                    seaborn.violinplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.17" data-path="../Chapter7/seaborn.boxenplot.html">
+            
+                <a href="../Chapter7/seaborn.boxenplot.html">
+            
+                    
+                    seaborn.boxenplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.18" data-path="../Chapter7/seaborn.barplot.html">
+            
+                <a href="../Chapter7/seaborn.barplot.html">
+            
+                    
+                    seaborn.barplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.19" data-path="../Chapter7/seaborn.countplot.html">
+            
+                <a href="../Chapter7/seaborn.countplot.html">
+            
+                    
+                    seaborn.countplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.20" data-path="../Chapter7/seaborn.jointplot.html">
+            
+                <a href="../Chapter7/seaborn.jointplot.html">
+            
+                    
+                    seaborn.jointplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.21" data-path="../Chapter7/seaborn.pairplot.html">
+            
+                <a href="../Chapter7/seaborn.pairplot.html">
+            
+                    
+                    seaborn.pairplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.22" data-path="../Chapter7/seaborn.distplot.html">
+            
+                <a href="../Chapter7/seaborn.distplot.html">
+            
+                    
+                    seaborn.distplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.23" data-path="../Chapter7/seaborn.kdeplot.html">
+            
+                <a href="../Chapter7/seaborn.kdeplot.html">
+            
+                    
+                    seaborn.kdeplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.24" data-path="../Chapter7/seaborn.lmplot.html">
+            
+                <a href="../Chapter7/seaborn.lmplot.html">
+            
+                    
+                    seaborn.lmplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.25" data-path="../Chapter7/seaborn.regplot.html">
+            
+                <a href="../Chapter7/seaborn.regplot.html">
+            
+                    
+                    seaborn.regplott
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.26" data-path="../Chapter7/seaborn.residplot.html">
+            
+                <a href="../Chapter7/seaborn.residplot.html">
+            
+                    
+                    seaborn.residplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.27" data-path="../Chapter7/seaborn.heatmap.html">
+            
+                <a href="../Chapter7/seaborn.heatmap.html">
+            
+                    
+                    seaborn.heatmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.28" data-path="../Chapter7/seaborn.FacetGrid.html">
+            
+                <a href="../Chapter7/seaborn.FacetGrid.html">
+            
+                    
+                    seaborn.FacetGrid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.29" data-path="../Chapter7/seaborn.PairGrid.html">
+            
+                <a href="../Chapter7/seaborn.PairGrid.html">
+            
+                    
+                    seaborn.PairGrid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.30" data-path="../Chapter7/seaborn.JointGrid.html">
+            
+                <a href="../Chapter7/seaborn.JointGrid.html">
+            
+                    
+                    seaborn.JointGrid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.31" data-path="../Chapter7/seaborn.set.html">
+            
+                <a href="../Chapter7/seaborn.set.html">
+            
+                    
+                    seaborn.set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.32" data-path="../Chapter7/seaborn.axes_style.html">
+            
+                <a href="../Chapter7/seaborn.axes_style.html">
+            
+                    
+                    seaborn.axes_style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.33" data-path="../Chapter7/seaborn.set_style.html">
+            
+                <a href="../Chapter7/seaborn.set_style.html">
+            
+                    
+                    seaborn.set_style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.34" data-path="../Chapter7/seaborn.plotting_context.html">
+            
+                <a href="../Chapter7/seaborn.plotting_context.html">
+            
+                    
+                    seaborn.plotting_context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.35" data-path="../Chapter7/seaborn.set_context.html">
+            
+                <a href="../Chapter7/seaborn.set_context.html">
+            
+                    
+                    seaborn.set_context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.36" data-path="../Chapter7/seaborn.set_color_codes.html">
+            
+                <a href="../Chapter7/seaborn.set_color_codes.html">
+            
+                    
+                    seaborn.set_color_codes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.37" data-path="../Chapter7/seaborn.set_palette.html">
+            
+                <a href="../Chapter7/seaborn.set_palette.html">
+            
+                    
+                    seaborn.set_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.38" data-path="../Chapter7/seaborn.color_palette.html">
+            
+                <a href="../Chapter7/seaborn.color_palette.html">
+            
+                    
+                    seaborn.color_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.39" data-path="../Chapter7/seaborn.husl_palette.html">
+            
+                <a href="../Chapter7/seaborn.husl_palette.html">
+            
+                    
+                    seaborn.husl_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.40" data-path="../Chapter7/seaborn.hls_palette.html">
+            
+                <a href="../Chapter7/seaborn.hls_palette.html">
+            
+                    
+                    seaborn.hls_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.41" data-path="../Chapter7/seaborn.cubehelix_palette.html">
+            
+                <a href="../Chapter7/seaborn.cubehelix_palette.html">
+            
+                    
+                    seaborn.cubehelix_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.42" data-path="../Chapter7/seaborn.dark_palette.html">
+            
+                <a href="../Chapter7/seaborn.dark_palette.html">
+            
+                    
+                    seaborn.dark_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.43" data-path="../Chapter7/seaborn.light_palette.html">
+            
+                <a href="../Chapter7/seaborn.light_palette.html">
+            
+                    
+                    seaborn.light_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.44" data-path="../Chapter7/seaborn.diverging_palette.html">
+            
+                <a href="../Chapter7/seaborn.diverging_palette.html">
+            
+                    
+                    seaborn.diverging_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.45" data-path="../Chapter7/seaborn.mpl_palette.html">
+            
+                <a href="../Chapter7/seaborn.mpl_palette.html">
+            
+                    
+                    seaborn.mpl_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.46" data-path="../Chapter7/seaborn.despine.html">
+            
+                <a href="../Chapter7/seaborn.despine.html">
+            
+                    
+                    seaborn.despine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Matplotlib:subplots绘制多子图</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#matplotlibsubplots&#x7ED8;&#x5236;&#x591A;&#x5B50;&#x56FE;">Matplotlib:subplots&#x7ED8;&#x5236;&#x591A;&#x5B50;&#x56FE;</a></li><ul><li><a href="#&#x8C03;&#x6574;&#x5B50;&#x56FE;&#x95F4;&#x8DDD;&#x548C;&#x6574;&#x4F53;&#x7A7A;&#x767D;">&#x8C03;&#x6574;&#x5B50;&#x56FE;&#x95F4;&#x8DDD;&#x548C;&#x6574;&#x4F53;&#x7A7A;&#x767D;</a></li><li><a href="#&#x89C4;&#x5219;&#x5212;&#x5206;">&#x89C4;&#x5219;&#x5212;&#x5206;</a></li><li><a href="#&#x4E0D;&#x89C4;&#x5219;&#x5212;&#x5206;">&#x4E0D;&#x89C4;&#x5219;&#x5212;&#x5206;</a></li><li><a href="#&#x901A;&#x8FC7;gridspec&#x6765;&#x5B9A;&#x5236;subplot&#x7684;&#x5750;&#x6807;">&#x901A;&#x8FC7;GridSpec&#x6765;&#x5B9A;&#x5236;Subplot&#x7684;&#x5750;&#x6807;</a></li><li><a href="#&#x53C2;&#x8003;">&#x53C2;&#x8003;</a></li></ul></ul></div><a href="#matplotlibsubplots&#x7ED8;&#x5236;&#x591A;&#x5B50;&#x56FE;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="matplotlibsubplots&#x7ED8;&#x5236;&#x591A;&#x5B50;&#x56FE;"><a name="matplotlibsubplots&#x7ED8;&#x5236;&#x591A;&#x5B50;&#x56FE;" class="anchor-navigation-ex-anchor" href="#matplotlibsubplots&#x7ED8;&#x5236;&#x591A;&#x5B50;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>Matplotlib:subplots&#x7ED8;&#x5236;&#x591A;&#x5B50;&#x56FE;</h1>
+<h2 id="&#x8C03;&#x6574;&#x5B50;&#x56FE;&#x95F4;&#x8DDD;&#x548C;&#x6574;&#x4F53;&#x7A7A;&#x767D;"><a name="&#x8C03;&#x6574;&#x5B50;&#x56FE;&#x95F4;&#x8DDD;&#x548C;&#x6574;&#x4F53;&#x7A7A;&#x767D;" class="anchor-navigation-ex-anchor" href="#&#x8C03;&#x6574;&#x5B50;&#x56FE;&#x95F4;&#x8DDD;&#x548C;&#x6574;&#x4F53;&#x7A7A;&#x767D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8C03;&#x6574;&#x5B50;&#x56FE;&#x95F4;&#x8DDD;&#x548C;&#x6574;&#x4F53;&#x7A7A;&#x767D;</h2>
+<pre class="language-"><code class="lang-python">fig<span class="token punctuation">.</span>tight_layout<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#&#x8C03;&#x6574;&#x6574;&#x4F53;&#x7A7A;&#x767D;</span>
+plt<span class="token punctuation">.</span>subplots_adjust<span class="token punctuation">(</span>wspace <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> hspace <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">#&#x8C03;&#x6574;&#x5B50;&#x56FE;&#x95F4;&#x8DDD;</span>
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x56FE;&#x50CF;&#x5BF9;&#x8C61;&#xFF08;figure&#xFF09; &#x548C; &#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5B50;&#x56FE;&#xFF08;<code>subplots</code>&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">def</span> <span class="token function">subplots</span><span class="token punctuation">(</span>nrows<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> ncols<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> 
+             sharex<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> sharey<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> squeeze<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+             subplot_kw<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> gridspec_kw<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token operator">**</span>fig_kw<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+
+<span class="token comment"># &#x8FD4;&#x56DE;&#x503C;    </span>
+<span class="token keyword">return</span> fig<span class="token punctuation">,</span> axs
+</code></pre>
+<p><strong>&#x53C2;&#x6570;</strong></p>
+<ul>
+<li><code>nrows</code> &#xFF0C;<code>ncols</code> &#xFF1A;&#x5B50;&#x56FE;&#x7684;&#x884C;&#x5217;&#x6570;&#x3002;</li>
+<li><code>sharex</code> , <code>sharey</code> &#xFF1A;<ul>
+<li>&#x8BBE;&#x7F6E;&#x4E3A; <code>True</code>  &#x6216;&#x8005; <code>all</code>  &#x65F6;&#xFF0C;&#x6240;&#x6709;&#x5B50;&#x56FE;&#x5171;&#x4EAB; x &#x8F74;&#x6216;&#x8005; y &#x8F74;&#xFF0C;</li>
+<li>&#x8BBE;&#x7F6E;&#x4E3A; <code>False</code> or <code>none</code>  &#x65F6;&#xFF0C;&#x6240;&#x6709;&#x5B50;&#x56FE;&#x7684; x&#xFF0C;y &#x8F74;&#x5747;&#x4E3A;&#x72EC;&#x7ACB;&#xFF0C;</li>
+<li>&#x8BBE;&#x7F6E;&#x4E3A; <code>row</code>  &#x65F6;&#xFF0C;&#x6BCF;&#x4E00;&#x884C;&#x7684;&#x5B50;&#x56FE;&#x4F1A;&#x5171;&#x4EAB; x &#x6216;&#x8005; y &#x8F74;&#xFF0C;</li>
+<li>&#x8BBE;&#x7F6E;&#x4E3A; <code>col</code> &#x65F6;&#xFF0C;&#x6BCF;&#x4E00;&#x5217;&#x7684;&#x5B50;&#x56FE;&#x4F1A;&#x5171;&#x4EAB; x &#x6216;&#x8005; y &#x8F74;&#x3002;</li>
+</ul>
+</li>
+<li><code>squeeze</code> &#xFF1A;<ul>
+<li>&#x9ED8;&#x8BA4;&#x4E3A; True&#xFF0C;&#x662F;&#x8BBE;&#x7F6E;&#x8FD4;&#x56DE;&#x7684;&#x5B50;&#x56FE;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#x683C;&#x5F0F;&#x3002;</li>
+<li>&#x5F53;&#x4E3A; False &#x65F6;&#xFF0C;&#x4E0D;&#x8BBA;&#x8FD4;&#x56DE;&#x7684;&#x5B50;&#x56FE;&#x662F;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8FD8;&#x662F;&#x53EA;&#x6709;&#x4E00;&#x884C;&#xFF0C;&#x90FD;&#x4F1A;&#x7528;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x683C;&#x5F0F;&#x8FD4;&#x56DE;&#x4ED6;&#x7684;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5F53;&#x4E3A; True &#x65F6;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x7684;&#x5B50;&#x56FE;&#x662F;&#xFF08;nrows=ncols=1&#xFF09;&#xFF0C;&#x5373;&#x5B50;&#x56FE;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7684;&#x5B50;&#x56FE;&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x91CF;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x5B50;&#x56FE;&#x6709;&#xFF08;N&#xD7;1&#xFF09;&#x6216;&#x8005;&#xFF08;1&#xD7;N&#xFF09;&#x4E2A;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7684;&#x5B50;&#x56FE;&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x662F;&#xFF08;N&#xD7;M&#xFF09;&#x5219;&#x662F;&#x8FD4;&#x56DE;&#x4E8C;&#x4F4D;&#x683C;&#x5F0F;&#x3002;</li>
+</ul>
+</li>
+<li><code>subplot_kw</code> : <ul>
+<li>&#x5B57;&#x5178;&#x683C;&#x5F0F;&#xFF0C;&#x4F20;&#x9012;&#x7ED9; <code>add_subplot()</code>  &#xFF0C;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5B50;&#x56FE;&#x3002;</li>
+</ul>
+</li>
+<li><code>gridspec_kw</code> &#xFF1A;&#x5B57;&#x5178;&#x683C;&#x5F0F;&#xFF0C;&#x4F20;&#x9012;&#x7ED9; <code>GridSpec</code> &#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5B50;&#x56FE;&#x6240;&#x6446;&#x653E;&#x7684;&#x7F51;&#x683C;&#x3002;<ul>
+<li>class matplotlib.gridspec.GridSpec(nrows, ncols, figure=None, left=None, bottom=None, right=None, top=None, wspace=None, hspace=None, width_ratios=None, height_ratios=None)</li>
+<li>&#x6240;&#x6709;&#x5176;&#x4ED6;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x90FD;&#x4F20;&#x9012;&#x7ED9; figure&#xFF08;&#xFF09;&#x8C03;&#x7528;&#x3002;&#x5982;&#xFF0C;&#x8BBE;&#x7F6E; figsize=(21, 12) &#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x4E86;&#x56FE;&#x50CF;&#x5927;&#x5C0F;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong></p>
+<ul>
+<li><code>fig</code> &#xFF1A; <code>matplotlib.figure.Figure</code>&#x5BF9;&#x8C61;</li>
+<li><code>ax</code> &#xFF1A;&#x5B50;&#x56FE;&#x5BF9;&#x8C61;&#xFF08; <code>matplotlib.axes.Axes</code>&#xFF09;&#x6216;&#x8005;&#x662F;&#x4ED6;&#x7684;&#x6570;&#x7EC4;
+<code>fig, axes = plt.subplots(23)</code> &#xFF1A;&#x5373;&#x8868;&#x793A;&#x4E00;&#x6B21;&#x6027;&#x5728; <code>figure</code> &#x4E0A;&#x521B;&#x5EFA;&#x6210;2*3&#x7684;&#x7F51;&#x683C;</li>
+</ul>
+<h2 id="&#x89C4;&#x5219;&#x5212;&#x5206;"><a name="&#x89C4;&#x5219;&#x5212;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x89C4;&#x5219;&#x5212;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89C4;&#x5219;&#x5212;&#x5206;</h2>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>pi<span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>x <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B50;&#x56FE;</span>
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">&apos;Simple plot&apos;</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191221170118.png">
+</center>
+
+
+
+<p><strong>&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x5B50;&#x56FE;&#xFF0C;&#x5E76;&#x4E14;&#x5171;&#x4EAB;y&#x8F74;</strong></p>
+<pre class="language-"><code class="lang-python">f<span class="token punctuation">,</span> <span class="token punctuation">(</span>ax1<span class="token punctuation">,</span> ax2<span class="token punctuation">)</span> <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> sharey<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+ax1<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+ax1<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">&apos;Sharing Y axis&apos;</span><span class="token punctuation">)</span>
+ax2<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+</code></pre>
+<center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191221170356.png">
+</center>
+
+
+
+<p><strong>&#x521B;&#x5EFA;4&#x4E2A;&#x5B50;&#x56FE;</strong></p>
+<pre class="language-"><code class="lang-python">fig<span class="token punctuation">,</span> axes <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> subplot_kw<span class="token operator">=</span><span class="token builtin">dict</span><span class="token punctuation">(</span>polar<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment"># polar:&#x6781;&#x5730;</span>
+axes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+axes<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+</code></pre>
+<center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191221170555.png">
+</center>
+
+
+
+<p><strong>&#x5171;&#x4EAB;&#x6BCF;&#x5217;&#x5B50;&#x56FE;&#x7684;x&#x8F74;</strong></p>
+<pre class="language-"><code class="lang-python">plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> sharex<span class="token operator">=</span><span class="token string">&apos;col&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191221171037.png">
+</center>
+
+<p><strong>&#x5171;&#x4EAB;&#x6BCF;&#x884C;&#x5B50;&#x56FE;&#x7684;y&#x8F74;</strong></p>
+<pre class="language-"><code class="lang-python">plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> sharey<span class="token operator">=</span><span class="token string">&apos;row&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191221171202.png">
+</center>
+
+<p><strong>&#x5171;&#x4EAB;&#x6240;&#x6709;&#x5B50;&#x56FE;&#x7684; x &#x548C; y &#x8F74;</strong></p>
+<pre class="language-"><code class="lang-python"><span class="token comment"># plt.subplots(2, 2, sharex=&apos;all&apos;, sharey=&apos;all&apos;)</span>
+plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> sharex<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> sharey<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</code></pre>
+<center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191221171350.png">
+</center>
+
+<h2 id="&#x4E0D;&#x89C4;&#x5219;&#x5212;&#x5206;"><a name="&#x4E0D;&#x89C4;&#x5219;&#x5212;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#x4E0D;&#x89C4;&#x5219;&#x5212;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0D;&#x89C4;&#x5219;&#x5212;&#x5206;</h2>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+
+<span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> np<span class="token punctuation">.</span>exp<span class="token punctuation">(</span><span class="token operator">-</span>t<span class="token punctuation">)</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token operator">*</span>t<span class="token punctuation">)</span>
+
+
+t1 <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">0.0</span><span class="token punctuation">,</span> <span class="token number">3.0</span><span class="token punctuation">,</span> <span class="token number">0.01</span><span class="token punctuation">)</span>
+
+ax2 <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">221</span><span class="token punctuation">)</span>
+ax2<span class="token punctuation">.</span>margins<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>           <span class="token comment"># Values &gt;0.0 zoom out</span>
+ax2<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>t1<span class="token punctuation">,</span> f<span class="token punctuation">(</span>t1<span class="token punctuation">)</span><span class="token punctuation">)</span>
+ax2<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">&apos;Zoomed out&apos;</span><span class="token punctuation">)</span>
+
+ax3 <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">222</span><span class="token punctuation">)</span>
+ax3<span class="token punctuation">.</span>margins<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token operator">-</span><span class="token number">0.25</span><span class="token punctuation">)</span>   <span class="token comment"># Values in (-0.5, 0.0) zooms in to center</span>
+ax3<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>t1<span class="token punctuation">,</span> f<span class="token punctuation">(</span>t1<span class="token punctuation">)</span><span class="token punctuation">)</span>
+ax3<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">&apos;Zoomed in&apos;</span><span class="token punctuation">)</span>
+
+ax1 <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">212</span><span class="token punctuation">)</span>
+ax1<span class="token punctuation">.</span>margins<span class="token punctuation">(</span><span class="token number">0.05</span><span class="token punctuation">)</span>           <span class="token comment"># Default margin is 0.05, value 0 means fit</span>
+ax1<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>t1<span class="token punctuation">,</span> f<span class="token punctuation">(</span>t1<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191221173430.png">
+</center>
+
+<blockquote>
+<p>&#x5206;&#x6210; 2x2&#xFF0C;&#x5360;&#x7528;&#x7B2C;&#x4E00;&#x4E2A;&#xFF0C;&#x5373;&#x7B2C;&#x4E00;&#x884C;&#x7B2C;&#x4E00;&#x5217;&#x7684;&#x5B50;&#x56FE;
+<code>plt.subplot(221)</code>
+&#x5206;&#x6210; 2x2&#xFF0C;&#x5360;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF0C;&#x5373;&#x7B2C;&#x4E00;&#x884C;&#x7B2C;&#x4E8C;&#x5217;&#x7684;&#x5B50;&#x56FE;
+<code>plt.subplot(222)</code>
+&#x5206;&#x6210; 2x1&#xFF0C;&#x5360;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF0C;&#x5373;&#x7B2C;&#x4E8C;&#x884C;
+<code>plt.subplot(212)</code></p>
+</blockquote>
+<h2 id="&#x901A;&#x8FC7;gridspec&#x6765;&#x5B9A;&#x5236;subplot&#x7684;&#x5750;&#x6807;"><a name="&#x901A;&#x8FC7;gridspec&#x6765;&#x5B9A;&#x5236;subplot&#x7684;&#x5750;&#x6807;" class="anchor-navigation-ex-anchor" href="#&#x901A;&#x8FC7;gridspec&#x6765;&#x5B9A;&#x5236;subplot&#x7684;&#x5750;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;GridSpec&#x6765;&#x5B9A;&#x5236;Subplot&#x7684;&#x5750;&#x6807;</h2>
+<p><code>GridSpec</code> &#x6307;&#x5B9A;&#x5B50;&#x56FE;&#x6240;&#x653E;&#x7F6E;&#x7684;&#x51E0;&#x4F55;&#x7F51;&#x683C;&#x3002;</p>
+<p><code>SubplotSpec</code> &#x5728; <code>GridSpec</code> &#x4E2D;&#x6307;&#x5B9A;&#x5B50;&#x56FE;&#xFF08;subplot&#xFF09;&#x7684;&#x4F4D;&#x7F6E;</p>
+<p><code>subplot2grid</code> &#x7C7B;&#x4F3C;&#x4E8E;  <code>pyplot.subplot</code> &#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4ECE;0&#x5F00;&#x59CB;&#x7D22;&#x5F15;</p>
+<pre class="language-"><code>ax = plt.subplot2grid((2,2),(0, 0))
+ax = plt.subplot(2,2,1)
+</code></pre><p>&#x4EE5;&#x4E0A;&#x4E24;&#x884C;&#x7684;&#x5B50;&#x56FE;&#xFF08;subplot&#xFF09;&#x547D;&#x4EE4;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;<code>subplot2grid</code> &#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x7C7B;&#x4F3C;&#x4E8E;HTML&#x8BED;&#x8A00;&#x3002;</p>
+<pre class="language-"><code>ax1 = plt.subplot2grid((3,3), (0,0), colspan=3)
+ax2 = plt.subplot2grid((3,3), (1,0), colspan=2)
+ax3 = plt.subplot2grid((3,3), (1, 2), rowspan=2)
+ax4 = plt.subplot2grid((3,3), (2, 0))
+ax5 = plt.subplot2grid((3,3), (2, 1))
+</code></pre><center>
+    <img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20191221174742.png">
+</center>
+
+
+
+
+
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
+<ol>
+<li><a href="https://blog.csdn.net/claroja/article/details/70841382" target="_blank">subplot &#x5B50;&#x56FE;</a> </li>
+</ol>
+<footer class="page-footer"><span class="copyright">   </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-23 15:50
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="axes脊柱.html" class="navigation navigation-prev " aria-label="Previous page: axes脊柱(坐标系)设置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="调整子图间距,调整整体空白.html" class="navigation navigation-next " aria-label="Next page: 调整子图间距,调整整体空白">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Matplotlib:subplots绘制多子图","level":"2.1.12","depth":2,"next":{"title":"调整子图间距,调整整体空白","level":"2.1.13","depth":2,"path":"Chapter1/调整子图间距,调整整体空白.md","ref":"Chapter1/调整子图间距,调整整体空白.md","articles":[]},"previous":{"title":"axes脊柱(坐标系)设置","level":"2.1.11","depth":2,"path":"Chapter1/axes脊柱.md","ref":"Chapter1/axes脊柱.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","expandable-chapters-small@^0.1.7","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","hide-element","code","tbfed-pagefooter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"expandable-chapters-small":{},"local-video":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"Chapter1/Matplotlib subplots绘制多子图.md","mtime":"2020-05-23T07:50:39.007Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T00:52:42.599Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
