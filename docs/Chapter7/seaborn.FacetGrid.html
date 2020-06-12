@@ -4,14 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>seaborn.FacetGrid · GitBook 使用教程</title>
+        <title>seaborn.FacetGrid · python 学习记录</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="zhangjikai">
+        <meta name="author" content="HHG">
         
         
-    
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
@@ -26,7 +25,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
                 
             
                 
@@ -50,11 +49,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
                 
             
                 
@@ -66,11 +61,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
                 
@@ -101,11 +100,7 @@
         
     
 
-
-    
-
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -120,15 +115,6 @@
     
     
     <link rel="prev" href="seaborn.heatmap.html" />
-    
-
-    
-        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
-    
-    
     
 
     </head>
@@ -1400,13 +1386,13 @@
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> tips <span class="token operator">=</span> sns<span class="token punctuation">.</span>load_dataset<span class="token punctuation">(</span><span class="token string">&quot;tips&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span> row<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101442.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101442.jpg" data-lightbox="64136353-c986-4bd3-8ad5-4b89dffdc78b" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101442.jpg" alt="undefined"></a></p>
 <p>&#x5728;&#x6BCF;&#x4E2A;&#x5B50;&#x56FE;&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x5355;&#x53D8;&#x91CF;&#x56FE;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span>  row<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>hist<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101520.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101520.jpg" data-lightbox="50dff4fd-d50a-4617-9975-8f77c3a05d5c" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101520.jpg" alt="undefined"></a></p>
 <p>&#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x91CD;&#x65B0;&#x6355;&#x83B7;&#x8FD4;&#x56DE;&#x7684;&#x53D8;&#x91CF;;&#x5B83;&#x662F;&#x76F8;&#x540C;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x5728;&#x793A;&#x4F8B;&#x4E2D;&#x8FD9;&#x6837;&#x505A;&#x4F7F;&#x5F97;&#x5904;&#x7406; doctests &#x66F4;&#x52A0;&#x65B9;&#x4FBF;&#xFF09;&#x3002;</p>
 <p>&#x5C06;&#x5176;&#x4ED6;&#x5173;&#x952E;&#x5B57;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x6620;&#x5C04;&#x51FD;&#x6570;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
@@ -1414,18 +1400,18 @@
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span>  row<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>hist<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> bins<span class="token operator">=</span>bins<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">&quot;r&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101557.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101557.jpg" data-lightbox="892a2eee-7f7e-497a-9637-44e23970b5cf" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101557.jpg" alt="undefined"></a></p>
 <p>&#x5728;&#x6BCF;&#x4E2A;&#x5B50;&#x56FE;&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x53CC;&#x53D8;&#x91CF;&#x51FD;&#x6570;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span>  row<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> edgecolor<span class="token operator">=</span><span class="token string">&quot;w&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101643.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101643.jpg" data-lightbox="93421deb-33ec-4bb0-8e51-6d04b34a6ae9" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101643.jpg" alt="undefined"></a></p>
 <p>&#x5C06;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x5206;&#x914D;&#x7ED9;&#x7ED8;&#x56FE;&#x5143;&#x7D20;&#x7684;&#x989C;&#x8272;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span>  hue<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> <span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> edgecolor<span class="token operator">=</span><span class="token string">&quot;w&quot;</span><span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>       <span class="token punctuation">.</span>add_legend<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101709.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101709.jpg" data-lightbox="31827e96-e879-44e4-9bfa-9fa987c417ad" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101709.jpg" alt="undefined"></a></p>
 <p>&#x66F4;&#x6539;&#x6BCF;&#x4E2A;&#x5B50;&#x56FE;&#x7684;&#x9AD8;&#x5EA6;&#x548C;&#x7EB5;&#x6A2A;&#x6BD4;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;day&quot;</span><span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> aspect<span class="token operator">=</span><span class="token number">.5</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>hist<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> bins<span class="token operator">=</span>bins<span class="token punctuation">)</span>
@@ -1435,7 +1421,7 @@
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">,</span> col_order<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;Yes&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;No&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>hist<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> bins<span class="token operator">=</span>bins<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">&quot;m&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101851.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101851.jpg" data-lightbox="8472cb48-dd7a-4951-a2f4-65a6e791067c" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101851.jpg" alt="undefined"></a></p>
 <p>&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x8C03;&#x8272;&#x677F;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> kws <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span>s<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">.5</span><span class="token punctuation">,</span> edgecolor<span class="token operator">=</span><span class="token string">&quot;w&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;sex&quot;</span><span class="token punctuation">,</span> hue<span class="token operator">=</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span> palette<span class="token operator">=</span><span class="token string">&quot;Set1&quot;</span><span class="token punctuation">,</span>
@@ -1443,7 +1429,7 @@
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> <span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> <span class="token operator">**</span>kws<span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>      <span class="token punctuation">.</span>add_legend<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101912.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101912.jpg" data-lightbox="24d409f5-ffda-4eb7-893a-f117185f471f" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512101912.jpg" alt="undefined"></a></p>
 <p>&#x4F7F;&#x7528;&#x5B57;&#x5178;&#x5C06;&#x8272;&#x8C03;&#x7EA7;&#x522B;&#x6620;&#x5C04;&#x5230;&#x989C;&#x8272;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> pal <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span>Lunch<span class="token operator">=</span><span class="token string">&quot;seagreen&quot;</span><span class="token punctuation">,</span> Dinner<span class="token operator">=</span><span class="token string">&quot;gray&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;sex&quot;</span><span class="token punctuation">,</span> hue<span class="token operator">=</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span> palette<span class="token operator">=</span>pal<span class="token punctuation">,</span>
@@ -1451,7 +1437,7 @@
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> <span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> <span class="token operator">**</span>kws<span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>      <span class="token punctuation">.</span>add_legend<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102057.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102057.jpg" data-lightbox="e38d8ba5-d8b2-4f15-a727-df36830aa9ec" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102057.jpg" alt="undefined"></a></p>
 <p>&#x53E6;&#x5916;&#xFF0C;&#x4E3A;&#x8272;&#x8C03;&#x7EA7;&#x522B;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x6807;&#x8BB0;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;sex&quot;</span><span class="token punctuation">,</span> hue<span class="token operator">=</span><span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span> palette<span class="token operator">=</span>pal<span class="token punctuation">,</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>                   hue_order<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;Dinner&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Lunch&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
@@ -1459,13 +1445,13 @@
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> <span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> <span class="token operator">**</span>kws<span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>      <span class="token punctuation">.</span>add_legend<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102119.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102119.jpg" data-lightbox="3d555c63-3441-49bf-80a8-a7252a6e79a1" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102119.jpg" alt="undefined"></a></p>
 <p>&#x5C06;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7EA7;&#x522B;&#x7684;&#x5217;&#x53D8;&#x91CF;&#x201C;&#x6362;&#x884C;&#x201D;&#x5230;&#x884C;&#x4E2D;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> att <span class="token operator">=</span> sns<span class="token punctuation">.</span>load_dataset<span class="token punctuation">(</span><span class="token string">&quot;attention&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>att<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;subject&quot;</span><span class="token punctuation">,</span> col_wrap<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">1.5</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>plot<span class="token punctuation">,</span> <span class="token string">&quot;solutions&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;score&quot;</span><span class="token punctuation">,</span> marker<span class="token operator">=</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102138.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102138.jpg" data-lightbox="74ae1d60-c49b-4303-ab2a-3e025c8a6fab" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102138.jpg" alt="undefined"></a></p>
 <p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x53CC;&#x53D8;&#x91CF;&#x51FD;&#x6570;&#x6765;&#x6620;&#x5C04;&#x5230;&#x7F51;&#x683C;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">from</span> scipy <span class="token keyword">import</span> stats
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">def</span> <span class="token function">qqplot</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -1476,7 +1462,7 @@
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> <span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>qqplot<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> <span class="token operator">**</span>kws<span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>       <span class="token punctuation">.</span>add_legend<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102157.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102157.jpg" data-lightbox="277d310e-96d2-4791-a600-19a4e5465400" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102157.jpg" alt="undefined"></a></p>
 <p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;<code>DataFrame</code>&#x5BF9;&#x8C61;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x63A5;&#x53D7;&#x5217;&#x540D;&#x4F5C;&#x4E3A;&#x4F4D;&#x7F6E;&#x53D8;&#x91CF;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>
@@ -1492,26 +1478,26 @@
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>df<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;walk&quot;</span><span class="token punctuation">,</span> col_wrap<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">3.5</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> g<span class="token punctuation">.</span>map_dataframe<span class="token punctuation">(</span>dateplot<span class="token punctuation">,</span> <span class="token string">&quot;date&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;val&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102229.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102229.jpg" data-lightbox="c12ce7f0-4a0f-413d-9289-eb8e6914575d" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102229.jpg" alt="undefined"></a></p>
 <p>&#x7ED8;&#x56FE;&#x540E;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x8F74;&#x6807;&#x7B7E;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">,</span> row<span class="token operator">=</span><span class="token string">&quot;sex&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> <span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">&quot;g&quot;</span><span class="token punctuation">,</span> <span class="token operator">**</span>kws<span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>       <span class="token punctuation">.</span>set_axis_labels<span class="token punctuation">(</span><span class="token string">&quot;Total bill (US Dollars)&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Tip&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102303.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102303.jpg" data-lightbox="681dff8d-dac9-4552-af78-deef7b878a81" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102303.jpg" alt="undefined"></a></p>
 <p>&#x8BBE;&#x7F6E;&#x6BCF;&#x4E2A;&#x5B50;&#x56FE;&#x5171;&#x4EAB;&#x7684;&#x5176;&#x4ED6;&#x5C5E;&#x6027;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">,</span> row<span class="token operator">=</span><span class="token string">&quot;sex&quot;</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> <span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">,</span> <span class="token string">&quot;total_bill&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">&quot;r&quot;</span><span class="token punctuation">,</span> <span class="token operator">**</span>kws<span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>       <span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span>xlim<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ylim<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>            xticks<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span> yticks<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102336.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102336.jpg" data-lightbox="4383afce-bd2d-432c-adb6-4f14bb2cd287" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102336.jpg" alt="undefined"></a></p>
 <p>&#x4E3A;&#x5B50;&#x56FE;&#x6807;&#x9898;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x677F;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;size&quot;</span><span class="token punctuation">,</span> col_wrap<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> <span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>plt<span class="token punctuation">.</span>hist<span class="token punctuation">,</span> <span class="token string">&quot;tip&quot;</span><span class="token punctuation">,</span> bins<span class="token operator">=</span>np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token punctuation">)</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>       <span class="token punctuation">.</span>set_titles<span class="token punctuation">(</span><span class="token string">&quot;{col_name} diners&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102427.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102427.jpg" data-lightbox="54b922bb-c69e-4592-8fd1-1242658c1aa3" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102427.jpg" alt="undefined"></a></p>
 <p>&#x6536;&#x7D27;&#x6BCF;&#x4E2A;&#x5B50;&#x56FE;:</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> g <span class="token operator">=</span> sns<span class="token punctuation">.</span>FacetGrid<span class="token punctuation">(</span>tips<span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">&quot;smoker&quot;</span><span class="token punctuation">,</span> row<span class="token operator">=</span><span class="token string">&quot;sex&quot;</span><span class="token punctuation">,</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>                   margin_titles<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
@@ -1520,7 +1506,7 @@
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>            xticks<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">]</span><span class="token punctuation">,</span> yticks<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>       <span class="token punctuation">.</span>fig<span class="token punctuation">.</span>subplots_adjust<span class="token punctuation">(</span>wspace<span class="token operator">=</span><span class="token number">.05</span><span class="token punctuation">,</span> hspace<span class="token operator">=</span><span class="token number">.05</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102529.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102529.jpg" data-lightbox="24b68e63-4b3e-484d-8e2e-046c595b423a" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512102529.jpg" alt="undefined"></a></p>
 <p>&#x65B9;&#x6CD5;</p>
 <p>| <a href="#seaborn.FacetGrid.__init__" title="seaborn.FacetGrid.__init__"><code>__init__</code></a>(data[, row, col, hue, col_wrap, &#x2026;]) | &#x521D;&#x59CB;&#x5316; matplotlib &#x753B;&#x5E03;&#x548C; FacetGrid &#x5BF9;&#x8C61;&#x3002; |</p>
 <p>| <code>add_legend</code>([legend_data, title, label_order]) | &#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x56FE;&#x4F8B;&#xFF0C;&#x53EF;&#x80FD;&#x5C06;&#x5176;&#x653E;&#x5728;&#x8F74;&#x5916;&#x5E76;&#x8C03;&#x6574;&#x56FE;&#x5F62;&#x5927;&#x5C0F;&#x3002;|</p>
@@ -1539,8 +1525,8 @@
 <p>| <code>set_yticklabels</code>([labels]) | &#x5728;&#x7F51;&#x683C;&#x7684;&#x5DE6;&#x5217;&#x4E0A;&#x8BBE;&#x7F6E; y &#x8F74;&#x523B;&#x5EA6;&#x6807;&#x7B7E;&#x3002; |</p>
 <p>&#x5C5E;&#x6027;</p>
 <p>| <code>ax</code> | &#x8F7B;&#x677E;&#x8BBF;&#x95EE;&#x5355;&#x4E2A;&#x5750;&#x6807;&#x8F74;&#x3002; | </p>
-<footer class="page-footer"><span class="copyright">   </span><span class="footer-modification">Update time&#xFF1A;
-2020-05-23 15:50
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-23 
 </span></footer>
                                 
                                 </section>
@@ -1584,13 +1570,12 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"seaborn.FacetGrid","level":"4.1.28","depth":2,"next":{"title":"seaborn.PairGrid","level":"4.1.29","depth":2,"path":"Chapter7/seaborn.PairGrid.md","ref":"Chapter7/seaborn.PairGrid.md","articles":[]},"previous":{"title":"seaborn.heatmap","level":"4.1.27","depth":2,"path":"Chapter7/seaborn.heatmap.md","ref":"Chapter7/seaborn.heatmap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","expandable-chapters-small@^0.1.7","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","hide-element","code","tbfed-pagefooter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"expandable-chapters-small":{},"local-video":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"Chapter7/seaborn.FacetGrid.md","mtime":"2020-05-23T07:50:39.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T00:52:42.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"seaborn.FacetGrid","level":"4.1.28","depth":2,"next":{"title":"seaborn.PairGrid","level":"4.1.29","depth":2,"path":"Chapter7/seaborn.PairGrid.md","ref":"Chapter7/seaborn.PairGrid.md","articles":[]},"previous":{"title":"seaborn.heatmap","level":"4.1.27","depth":2,"path":"Chapter7/seaborn.heatmap.md","ref":"Chapter7/seaborn.heatmap.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter7/seaborn.FacetGrid.md","mtime":"2020-05-23T07:50:39.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-12T13:26:03.038Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1623,11 +1608,7 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
         
@@ -1639,7 +1620,11 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         
@@ -1654,8 +1639,6 @@
         <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
-
-    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

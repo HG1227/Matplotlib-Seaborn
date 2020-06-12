@@ -4,14 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Matplotlib text注释 · GitBook 使用教程</title>
+        <title>Matplotlib text注释 · python 学习记录</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="zhangjikai">
+        <meta name="author" content="HHG">
         
         
-    
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
@@ -26,7 +25,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
                 
             
                 
@@ -50,11 +49,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
                 
             
                 
@@ -66,11 +61,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
                 
@@ -101,11 +100,7 @@
         
     
 
-
-    
-
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -120,15 +115,6 @@
     
     
     <link rel="prev" href="Matplotlib grid栅格设置.html" />
-    
-
-    
-        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
-    
-    
     
 
     </head>
@@ -1344,7 +1330,7 @@ plt<span class="token punctuation">.</span>text<span class="token punctuation">(
          family <span class="token operator">=</span> <span class="token string">&quot;fantasy&quot;</span><span class="token punctuation">,</span> color <span class="token operator">=</span> <span class="token string">&quot;r&quot;</span><span class="token punctuation">,</span> style <span class="token operator">=</span> <span class="token string">&quot;italic&quot;</span><span class="token punctuation">,</span> weight <span class="token operator">=</span> <span class="token string">&quot;light&quot;</span><span class="token punctuation">,</span>\
          bbox <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span>facecolor <span class="token operator">=</span> <span class="token string">&quot;r&quot;</span><span class="token punctuation">,</span> alpha <span class="token operator">=</span> <span class="token number">0.2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200513145421.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200513145421.png" data-lightbox="304fbff9-60e9-4ce8-8591-a65faec3e8b4" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200513145421.png" alt="undefined"></a></p>
 <p>&#x6DFB;&#x52A0;&#x6570;&#x636E;&#x6807;&#x7B7E;</p>
 <pre class="language-"><code class="lang-python"><span class="token keyword">def</span> <span class="token function">showResult</span><span class="token punctuation">(</span>xList<span class="token punctuation">,</span> yList<span class="token punctuation">,</span> title<span class="token punctuation">,</span> xLabel<span class="token punctuation">,</span> yLabel<span class="token punctuation">)</span><span class="token punctuation">:</span>
     plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>xList<span class="token punctuation">,</span> yList<span class="token punctuation">,</span> <span class="token string">&apos;g*-&apos;</span><span class="token punctuation">)</span>
@@ -1360,14 +1346,14 @@ x_arr <span class="token operator">=</span> <span class="token punctuation">[</s
 y_arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">36</span><span class="token punctuation">]</span>
 showResult<span class="token punctuation">(</span>x_arr<span class="token punctuation">,</span> y_arr<span class="token punctuation">,</span> <span class="token string">&apos;title&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;x&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;y&apos;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200513145630.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200513145630.jpg" data-lightbox="caea92e6-5a32-4957-85dd-8655cf36a776" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200513145630.jpg" alt="undefined"></a></p>
 <p>&#x5176;&#x4E2D;</p>
 <pre class="language-"><code class="lang-python"><span class="token keyword">for</span> x<span class="token punctuation">,</span> y <span class="token keyword">in</span> <span class="token builtin">zip</span><span class="token punctuation">(</span>xList<span class="token punctuation">,</span> yList<span class="token punctuation">)</span><span class="token punctuation">:</span>
     plt<span class="token punctuation">.</span>text<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token operator">+</span><span class="token number">0.3</span><span class="token punctuation">,</span> <span class="token string">&apos;%.0f&apos;</span><span class="token operator">%</span>y<span class="token punctuation">,</span> ha<span class="token operator">=</span><span class="token string">&apos;center&apos;</span><span class="token punctuation">,</span> va<span class="token operator">=</span><span class="token string">&apos;bottom&apos;</span><span class="token punctuation">,</span> fontsize<span class="token operator">=</span><span class="token number">10.5</span><span class="token punctuation">)</span>
 </code></pre>
 <p>&#x9010;&#x4E2A;&#x83B7;&#x53D6;&#x9700;&#x8981;&#x6807;&#x6CE8;&#x7684;&#x70B9;&#x7684;&#x6A2A;&#x7EB5;&#x5750;&#x6807; x&#x4E0E; y&#xFF0C;&#x7136;&#x540E;&#x5728;&#x4F4D;&#x7F6E; (x, y+0.3) &#x5904;&#x4EE5; 10.5 &#x7684;&#x5B57;&#x4F53;&#x663E;&#x793A;&#x51FA; y &#x7684;&#x503C;&#xFF0C;&#x2018;center&#x2019; &#x548C; &#x2018;bottom&#x2019; &#x5206;&#x522B;&#x6307;&#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x3002; </p>
-<footer class="page-footer"><span class="copyright">   </span><span class="footer-modification">Update time&#xFF1A;
-2020-05-23 15:50
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-23 
 </span></footer>
                                 
                                 </section>
@@ -1411,13 +1397,12 @@ showResult<span class="token punctuation">(</span>x_arr<span class="token punctu
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Matplotlib text注释","level":"2.1.17","depth":2,"next":{"title":"Matplotlib：Annotation注释","level":"2.1.18","depth":2,"path":"Chapter1/Matplotlib Annotation注释.md","ref":"Chapter1/Matplotlib Annotation注释.md","articles":[]},"previous":{"title":"Matplotlib:grid栅格设置","level":"2.1.16","depth":2,"path":"Chapter1/Matplotlib grid栅格设置.md","ref":"Chapter1/Matplotlib grid栅格设置.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","expandable-chapters-small@^0.1.7","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","hide-element","code","tbfed-pagefooter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"expandable-chapters-small":{},"local-video":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"Chapter1/Matplotlib text注释.md","mtime":"2020-05-23T07:50:39.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T00:52:42.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Matplotlib text注释","level":"2.1.17","depth":2,"next":{"title":"Matplotlib：Annotation注释","level":"2.1.18","depth":2,"path":"Chapter1/Matplotlib Annotation注释.md","ref":"Chapter1/Matplotlib Annotation注释.md","articles":[]},"previous":{"title":"Matplotlib:grid栅格设置","level":"2.1.16","depth":2,"path":"Chapter1/Matplotlib grid栅格设置.md","ref":"Chapter1/Matplotlib grid栅格设置.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter1/Matplotlib text注释.md","mtime":"2020-05-23T07:50:39.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-12T13:26:03.038Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1450,11 +1435,7 @@ showResult<span class="token punctuation">(</span>x_arr<span class="token punctu
         
     
         
-        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
         
@@ -1466,7 +1447,11 @@ showResult<span class="token punctuation">(</span>x_arr<span class="token punctu
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         
@@ -1481,8 +1466,6 @@ showResult<span class="token punctuation">(</span>x_arr<span class="token punctu
         <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
-
-    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

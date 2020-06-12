@@ -4,14 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>seaborn.cubehelix_palette · GitBook 使用教程</title>
+        <title>seaborn.cubehelix_palette · python 学习记录</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="zhangjikai">
+        <meta name="author" content="HHG">
         
         
-    
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
@@ -26,7 +25,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
                 
             
                 
@@ -50,11 +49,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
                 
             
                 
@@ -66,11 +61,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
                 
@@ -101,11 +100,7 @@
         
     
 
-
-    
-
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -120,15 +115,6 @@
     
     
     <link rel="prev" href="seaborn.hls_palette.html" />
-    
-
-    
-        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
-    
-    
     
 
     </head>
@@ -1348,37 +1334,37 @@
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns<span class="token punctuation">;</span> sns<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> sns<span class="token punctuation">.</span>palplot<span class="token punctuation">(</span>sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110313.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110313.jpg" data-lightbox="1e07bbce-0c75-44f4-99b5-dee8f9d2d9aa" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110313.jpg" alt="undefined"></a></p>
 <p>&#x4ECE;&#x76F8;&#x540C;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x5411;&#x540E;&#x65CB;&#x8F6C;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> sns<span class="token punctuation">.</span>palplot<span class="token punctuation">(</span>sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span>rot<span class="token operator">=</span><span class="token operator">-</span><span class="token number">.4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110334.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110334.jpg" data-lightbox="ec44c083-8c1e-4d9f-9a61-de847ecffb86" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110334.jpg" alt="undefined"></a></p>
 <p>&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x8D77;&#x70B9;&#x548C;&#x8F83;&#x77ED;&#x7684;&#x65CB;&#x8F6C;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> sns<span class="token punctuation">.</span>palplot<span class="token punctuation">(</span>sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span>start<span class="token operator">=</span><span class="token number">2.8</span><span class="token punctuation">,</span> rot<span class="token operator">=</span><span class="token number">.1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110355.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110355.jpg" data-lightbox="4a1dee97-4e2e-4c3d-a728-28716a9fbb83" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110355.jpg" alt="undefined"></a></p>
 <p>&#x53CD;&#x8F6C;&#x4EAE;&#x5EA6;&#x6E10;&#x53D8;&#x65B9;&#x5411;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> sns<span class="token punctuation">.</span>palplot<span class="token punctuation">(</span>sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110656.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110656.jpg" data-lightbox="f18aef5e-37a4-4cbd-a4d7-592dfbc5e6a9" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110656.jpg" alt="undefined"></a></p>
 <p>&#x751F;&#x6210;&#x4E00;&#x4E2A; colormap &#x5BF9;&#x8C61;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">from</span> numpy <span class="token keyword">import</span> arange
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> x <span class="token operator">=</span> arange<span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> cmap <span class="token operator">=</span> sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span>as_cmap<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>heatmap<span class="token punctuation">(</span>x<span class="token punctuation">,</span> cmap<span class="token operator">=</span>cmap<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110711.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110711.jpg" data-lightbox="80f5e236-f318-4779-a668-939460cab403" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110711.jpg" alt="undefined"></a></p>
 <p>&#x4F7F;&#x7528;&#x5B8C;&#x6574;&#x7684;&#x4EAE;&#x5EA6;&#x8303;&#x56F4;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> cmap <span class="token operator">=</span> sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span>dark<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> light<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> as_cmap<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>heatmap<span class="token punctuation">(</span>x<span class="token punctuation">,</span> cmap<span class="token operator">=</span>cmap<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110731.jpg"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110731.jpg" data-lightbox="794ec097-16f9-454d-9b7d-8edba234fb32" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110731.jpg" alt="undefined"></a></p>
 <p>&#x4F7F;&#x7528; <a href="seaborn.color_palette.html#seaborn.color_palette" title="seaborn.color_palette"><code>color_palette()</code></a> &#x51FD;&#x6570;&#x63A5;&#x53E3;&#xFF1A;</p>
 <pre class="language-"><code class="lang-py"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> sns<span class="token punctuation">.</span>palplot<span class="token punctuation">(</span>sns<span class="token punctuation">.</span>color_palette<span class="token punctuation">(</span><span class="token string">&quot;ch:2,r=.2,l=.6&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110749.jpg"> </p>
-<footer class="page-footer"><span class="copyright">   </span><span class="footer-modification">Update time&#xFF1A;
-2020-05-23 15:50
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110749.jpg" data-lightbox="961c3c40-faf8-47c1-a1ef-016e7ff06e3a" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200512110749.jpg" alt="undefined"></a> </p>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-23 
 </span></footer>
                                 
                                 </section>
@@ -1422,13 +1408,12 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"seaborn.cubehelix_palette","level":"4.1.41","depth":2,"next":{"title":"seaborn.dark_palette","level":"4.1.42","depth":2,"path":"Chapter7/seaborn.dark_palette.md","ref":"Chapter7/seaborn.dark_palette.md","articles":[]},"previous":{"title":"seaborn.hls_palette","level":"4.1.40","depth":2,"path":"Chapter7/seaborn.hls_palette.md","ref":"Chapter7/seaborn.hls_palette.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","expandable-chapters-small@^0.1.7","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","hide-element","code","tbfed-pagefooter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"expandable-chapters-small":{},"local-video":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"Chapter7/seaborn.cubehelix_palette.md","mtime":"2020-05-23T07:50:39.057Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T00:52:42.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"seaborn.cubehelix_palette","level":"4.1.41","depth":2,"next":{"title":"seaborn.dark_palette","level":"4.1.42","depth":2,"path":"Chapter7/seaborn.dark_palette.md","ref":"Chapter7/seaborn.dark_palette.md","articles":[]},"previous":{"title":"seaborn.hls_palette","level":"4.1.40","depth":2,"path":"Chapter7/seaborn.hls_palette.md","ref":"Chapter7/seaborn.hls_palette.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter7/seaborn.cubehelix_palette.md","mtime":"2020-05-23T07:50:39.057Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-12T13:26:03.038Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1461,11 +1446,7 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
         
@@ -1477,7 +1458,11 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         
@@ -1492,8 +1477,6 @@
         <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
-
-    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

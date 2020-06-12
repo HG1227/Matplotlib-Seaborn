@@ -4,14 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>散点图scatterplot · GitBook 使用教程</title>
+        <title>散点图scatterplot · python 学习记录</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="zhangjikai">
+        <meta name="author" content="HHG">
         
         
-    
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
@@ -26,7 +25,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
                 
             
                 
@@ -50,11 +49,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
                 
             
                 
@@ -66,11 +61,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
                 
@@ -101,11 +100,7 @@
         
     
 
-
-    
-
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -120,15 +115,6 @@
     
     
     <link rel="prev" href="seaborn.relplot.html" />
-    
-
-    
-        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
-    
-    
     
 
     </head>
@@ -1421,70 +1407,70 @@ if &quot;full&quot;, &#x6BCF;&#x4E00;&#x4E2A;&#x5206;&#x7EC4;&#x90FD;&#x6709;&#x
 tips <span class="token operator">=</span> sns<span class="token punctuation">.</span>load_dataset<span class="token punctuation">(</span><span class="token string">&apos;tips&apos;</span><span class="token punctuation">)</span>
 ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard1.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard1.png" data-lightbox="231de205-3a29-4c5e-9a17-ca9f6f93ea58" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard1.png" alt=""></a></p>
 <p>&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x7684;&#x53D8;&#x91CF;&#x5206;&#x7EC4;&#x5E76;&#x4E14;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x989C;&#x8272;&#x5C55;&#x793A;&#x5206;&#x7EC4;</p>
 <pre class="language-"><code class="lang-python">ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>hue<span class="token operator">=</span><span class="token string">&apos;time&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard2.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard2.png" data-lightbox="fbab2712-17bc-4c51-bd37-962be2de0ce1" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard2.png" alt=""></a></p>
 <p>&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x989C;&#x8272;&#x548C;&#x6807;&#x8BB0;&#x663E;&#x793A;&#x5206;&#x7EC4;&#x53D8;&#x91CF;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>
                      hue<span class="token operator">=</span><span class="token string">&apos;time&apos;</span><span class="token punctuation">,</span>style<span class="token operator">=</span><span class="token string">&apos;time&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard3.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard3.png" data-lightbox="8af76f4d-4c1e-4708-9e63-db5edd631748" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard3.png" alt=""></a></p>
 <p>&#x4E0D;&#x540C;&#x7684;&#x989C;&#x8272;&#x548C;&#x6807;&#x5FD7;&#x663E;&#x793A;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5206;&#x7EC4;&#x53D8;&#x91CF;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>
                      hue<span class="token operator">=</span><span class="token string">&apos;day&apos;</span><span class="token punctuation">,</span>style<span class="token operator">=</span><span class="token string">&apos;time&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard4.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard4.png" data-lightbox="4c7acaf1-3da2-4583-b790-3f95f303e546" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard4.png" alt=""></a></p>
 <p>&#x7528;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x70B9;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x91CF;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span> size<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard5.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard5.png" data-lightbox="a42a686c-bc4a-42b5-8981-97e1cd5661e2" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard5.png" alt=""></a></p>
 <p>&#x4F7F;&#x7528;&#x6E10;&#x53D8;&#x7684;&#x989C;&#x8272;&#x663E;&#x793A;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x91CF;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>
                      hue<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span> size<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard6.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard6.png" data-lightbox="0f267abf-856c-45f0-8eb5-8bb47bfd6bea" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard6.png" alt=""></a></p>
 <p>&#x7528;&#x4E00;&#x4E2A;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x6E10;&#x53D8;&#x989C;&#x8272;&#x6620;&#x5C04;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">cmap <span class="token operator">=</span> sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span>dark<span class="token operator">=</span><span class="token number">.3</span><span class="token punctuation">,</span>light<span class="token operator">=</span><span class="token number">.8</span><span class="token punctuation">,</span>as_cmap<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>
                      hue<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span> size<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span>palette<span class="token operator">=</span>cmap<span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard7.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard7.png" data-lightbox="fa27e91c-3dfa-4c8c-b420-db8b7cd1483d" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard7.png" alt=""></a></p>
 <p>&#x6539;&#x53D8;&#x70B9;&#x5927;&#x5C0F;&#x7684;&#x6700;&#x5C0F;&#x503C;&#x548C;&#x6700;&#x5927;&#x503C;&#x5E76;&#x5728;&#x56FE;&#x4F8B;&#x4E2D;&#x663E;&#x793A;&#x6240;&#x6709;&#x7684;&#x5C3A;&#x5BF8;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">cmap <span class="token operator">=</span> sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span>dark<span class="token operator">=</span><span class="token number">.3</span><span class="token punctuation">,</span>light<span class="token operator">=</span><span class="token number">.8</span><span class="token punctuation">,</span>as_cmap<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>
                      hue<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span>size<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span> sizes<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>legend<span class="token operator">=</span><span class="token string">&apos;full&apos;</span><span class="token punctuation">,</span>palette<span class="token operator">=</span>cmap<span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard8.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard8.png" data-lightbox="7d79316f-aa86-4cc5-b571-7ae38d47e7b3" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard8.png" alt=""></a></p>
 <p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x66F4;&#x5C0F;&#x7684;&#x989C;&#x8272;&#x5F3A;&#x5EA6;&#x8303;&#x56F4;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">cmap <span class="token operator">=</span> sns<span class="token punctuation">.</span>cubehelix_palette<span class="token punctuation">(</span>dark<span class="token operator">=</span><span class="token number">.3</span><span class="token punctuation">,</span>light<span class="token operator">=</span><span class="token number">.8</span><span class="token punctuation">,</span>as_cmap<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>hue<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span>size<span class="token operator">=</span><span class="token string">&apos;size&apos;</span><span class="token punctuation">,</span>
                      sizes<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>hue_norm<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">,</span> legend<span class="token operator">=</span><span class="token string">&apos;full&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard9.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard9.png" data-lightbox="3924dc38-9044-4fe7-b5b8-299bc0716903" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard9.png" alt=""></a></p>
 <p>&#x4E00;&#x4E2A;&#x7C7B;&#x522B;&#x53D8;&#x91CF;&#x4E0D;&#x540C;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x989C;&#x8272;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>hue<span class="token operator">=</span><span class="token string">&apos;day&apos;</span><span class="token punctuation">,</span>size<span class="token operator">=</span><span class="token string">&apos;smoker&apos;</span><span class="token punctuation">,</span>
                      palette<span class="token operator">=</span><span class="token string">&apos;Set2&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard10.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard10.png" data-lightbox="74d91235-9709-439d-8d38-85d4348b904a" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard10.png" alt=""></a></p>
 <p>&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x6807;&#x8BC6;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">markers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&apos;Lunch&apos;</span><span class="token punctuation">:</span><span class="token string">&apos;s&apos;</span><span class="token punctuation">,</span><span class="token string">&apos;Dinner&apos;</span><span class="token punctuation">:</span><span class="token string">&apos;X&apos;</span><span class="token punctuation">}</span>
 ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>style<span class="token operator">=</span><span class="token string">&apos;time&apos;</span><span class="token punctuation">,</span>
                      markers<span class="token operator">=</span>markers<span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard11.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard11.png" data-lightbox="bdace1c0-a646-495a-b5d2-a92ca4a0de81" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard11.png" alt=""></a></p>
 <p>&#x4F7F;&#x7528; matplotlib &#x7684;&#x53C2;&#x6570;&#x63A7;&#x5236;&#x7ED8;&#x5236;&#x5C5E;&#x6027;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&apos;total_bill&apos;</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">&apos;tip&apos;</span><span class="token punctuation">,</span>
                      s<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span>color<span class="token operator">=</span><span class="token string">&apos;.2&apos;</span><span class="token punctuation">,</span>marker<span class="token operator">=</span><span class="token string">&apos;+&apos;</span><span class="token punctuation">,</span>data<span class="token operator">=</span>tips<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard12.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard12.png" data-lightbox="873c49a6-35c5-4634-9d17-e0fdc2163249" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard12.png" alt=""></a></p>
 <p>&#x4F7F;&#x7528; data &#x5411;&#x91CF;&#x4EE3;&#x66FF; data frame &#x540D;&#x5B57;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">iris <span class="token operator">=</span> sns<span class="token punctuation">.</span>load_dataset<span class="token punctuation">(</span><span class="token string">&apos;iris&apos;</span><span class="token punctuation">)</span>
 ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span>iris<span class="token punctuation">.</span>sepal_length<span class="token punctuation">,</span>y<span class="token operator">=</span>iris<span class="token punctuation">.</span>sepal_width<span class="token punctuation">,</span>
                      hue <span class="token operator">=</span> iris<span class="token punctuation">.</span>species<span class="token punctuation">,</span>style<span class="token operator">=</span>iris<span class="token punctuation">.</span>species<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard13.png" alt=""></p>
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard13.png" data-lightbox="d89c83d6-91f1-4b46-ac6e-680b7a7a58a8" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard13.png" alt=""></a></p>
 <p>&#x4F20;&#x9012;&#x5BBD;&#x683C;&#x5F0F;&#x6570;&#x636E;&#x5E76;&#x6839;&#x636E;&#x5176;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x7ED8;&#x56FE;:</p>
 <pre class="language-"><code class="lang-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np<span class="token punctuation">,</span> pandas <span class="token keyword">as</span> pd<span class="token punctuation">;</span> plt<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token string">&quot;all&quot;</span><span class="token punctuation">)</span>
 index <span class="token operator">=</span> pd<span class="token punctuation">.</span>date_range<span class="token punctuation">(</span><span class="token string">&apos;1 1 2000&apos;</span><span class="token punctuation">,</span>periods<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span>freq<span class="token operator">=</span><span class="token string">&apos;m&apos;</span><span class="token punctuation">,</span>name<span class="token operator">=</span><span class="token string">&apos;date&apos;</span><span class="token punctuation">)</span>
@@ -1493,9 +1479,9 @@ wide_df <span class="token operator">=</span> pd<span class="token punctuation">
 <span class="token keyword">print</span><span class="token punctuation">(</span>wide_df<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 ax <span class="token operator">=</span> sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>data<span class="token operator">=</span>wide_df<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard14.png" alt=""> </p>
-<footer class="page-footer"><span class="copyright">   </span><span class="footer-modification">Update time&#xFF1A;
-2020-05-23 15:50
+<p><a href="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard14.png" data-lightbox="ed0b0e08-69b8-4e70-9bbf-8732e29bbe6d" data-title="" target="_blank"><img src="https://raw.githubusercontent.com/leijuzi/img_seaborn_11/master/img_11/clipboard14.png" alt=""></a> </p>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-23 
 </span></footer>
                                 
                                 </section>
@@ -1539,13 +1525,12 @@ ax <span class="token operator">=</span> sns<span class="token punctuation">.</s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"散点图scatterplot","level":"4.1.10","depth":2,"next":{"title":"折线图lineplot","level":"4.1.11","depth":2,"path":"Chapter7/折线图lineplot.md","ref":"Chapter7/折线图lineplot.md","articles":[]},"previous":{"title":"seaborn.relplot","level":"4.1.9","depth":2,"path":"Chapter7/seaborn.relplot.md","ref":"Chapter7/seaborn.relplot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","expandable-chapters-small@^0.1.7","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","hide-element","code","tbfed-pagefooter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"expandable-chapters-small":{},"local-video":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"Chapter7/散点图scatterplot.md","mtime":"2020-05-23T07:50:39.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T00:52:42.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"散点图scatterplot","level":"4.1.10","depth":2,"next":{"title":"折线图lineplot","level":"4.1.11","depth":2,"path":"Chapter7/折线图lineplot.md","ref":"Chapter7/折线图lineplot.md","articles":[]},"previous":{"title":"seaborn.relplot","level":"4.1.9","depth":2,"path":"Chapter7/seaborn.relplot.md","ref":"Chapter7/seaborn.relplot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter7/散点图scatterplot.md","mtime":"2020-05-23T07:50:39.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-12T13:26:03.038Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1578,11 +1563,7 @@ ax <span class="token operator">=</span> sns<span class="token punctuation">.</s
         
     
         
-        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
         
@@ -1594,7 +1575,11 @@ ax <span class="token operator">=</span> sns<span class="token punctuation">.</s
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         
@@ -1609,8 +1594,6 @@ ax <span class="token operator">=</span> sns<span class="token punctuation">.</s
         <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
-
-    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

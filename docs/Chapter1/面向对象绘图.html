@@ -4,14 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>面向对象绘图 · GitBook 使用教程</title>
+        <title>面向对象绘图 · python 学习记录</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="zhangjikai">
+        <meta name="author" content="HHG">
         
         
-    
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
@@ -26,7 +25,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
                 
             
                 
@@ -50,11 +49,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
                 
             
                 
@@ -66,11 +61,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
                 
@@ -101,11 +100,7 @@
         
     
 
-
-    
-
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -120,15 +115,6 @@
     
     
     <link rel="prev" href="图片保存.html" />
-    
-
-    
-        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
-    
-    
     
 
     </head>
@@ -1292,8 +1278,8 @@
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7ED8;&#x56FE;">&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7ED8;&#x56FE;</a></li><ul><li><a href="#&#x7ED8;&#x56FE;&#x524D;&#x8BBE;&#x7F6E;&#x7ED8;&#x56FE;&#x98CE;&#x683C;&#x7B49;&#x5168;&#x5C40;&#x53C2;&#x6570;">&#x7ED8;&#x56FE;&#x524D;&#x8BBE;&#x7F6E;&#x7ED8;&#x56FE;&#x98CE;&#x683C;&#x7B49;&#x5168;&#x5C40;&#x53C2;&#x6570;</a></li><li><a href="#formatters-and-locators">Formatters and Locators</a></li><li><a href="#axis-label">Axis Label</a></li><li><a href="#ticks-tick-labels-and-offset-text">Ticks, tick labels and Offset text</a></li><li><a href="#discouraged">Discouraged</a></li></ul></ul></div><a href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7ED8;&#x56FE;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7ED8;&#x56FE;"><a name="&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7ED8;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7ED8;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7ED8;&#x56FE;</h1>
 <p>&#xFEFF;# Matplotlib&#x4E2D;&#x56FE;&#x50CF;&#x7684;&#x7ED3;&#x6784;</p>
 <p>atplotlib&#x56FE;&#x50CF;&#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E09;&#x4E2A;&#x5BF9;&#x8C61;&#x5206;&#x522B;&#x662F;<code>figure</code>(&#x753B;&#x5E03;)&#xFF0C;<code>ax</code>(&#x5750;&#x6807;&#x7CFB;)&#xFF0C;<code>axis</code> (&#x5750;&#x6807;&#x8F74;)&#x3002;&#x4E00;&#x4E2A;<code>figure</code>&#x4E2D;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A; ax&#xFF08;&#x591A;&#x4E2A;&#x5B50;&#x56FE;&#xFF09;&#xFF0C;figure&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x56FE;&#x50CF;&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x50CF;&#x7D20;&#x7B49;&#x3002;&#x4E00;&#x4E2A;<code>ax</code>&#x4E2D;&#x4E00;&#x822C;&#x6709;&#x591A;&#x4E2A; axis&#xFF0C;&#x5982;<code>xaxis</code>&#xFF0C;<code>yaxis</code>&#x3002;<code>ax</code>&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5B50;&#x56FE;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x6807;&#x9898;&#xFF0C;&#x6570;&#x636E;&#x7684;&#x5448;&#x73B0;&#x5F62;&#x5F0F;&#xFF0C;&#x7EBF;&#x578B;&#xFF0C;&#x989C;&#x8272;&#x7B49;&#x3002;<code>axis</code>&#x53C8;&#x6709;<code>label</code>&#xFF0C;<code>tick</code>&#x7B49;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;&#xFF0C;&#x5750;&#x6807;&#x8F74;&#x6807;&#x7B7E;&#xFF0C;&#x5750;&#x6807;&#x8F74;&#x6807;&#x9898;&#x7B49;&#x3002;
-<img src="https://img-blog.csdnimg.cn/2019112121124453.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;">
-<img src="https://img-blog.csdnimg.cn/20191121211424782.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<a href="https://img-blog.csdnimg.cn/2019112121124453.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" data-lightbox="7fc46f79-07e0-4fef-8e26-85744fe4203e" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/2019112121124453.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a>
+<a href="https://img-blog.csdnimg.cn/20191121211424782.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" data-lightbox="3ab2193f-0cbe-44b5-9ef7-6a675d63c497" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20191121211424782.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <p>&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7ED8;&#x56FE;&#x4E00;&#x822C;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#xFF1A;
 0&#xFF0C;&#x7ED8;&#x56FE;&#x524D;&#x8BBE;&#x7F6E;&#x7ED8;&#x56FE;&#x98CE;&#x683C;&#x7B49;&#x5168;&#x5C40;&#x53C2;&#x6570;&#xFF0C;&#x4F8B;&#x5982;style&#xFF0C;font&#x7B49;&#x3002;</p>
 <p>1&#xFF0C;&#x5F00;&#x59CB;&#x7ED8;&#x56FE;&#x65F6;&#xFF0C;&#x9996;&#x5148;&#x662F;figure&#x5BF9;&#x8C61;&#x5E03;&#x5C40;&#xFF0C;&#x5305;&#x62EC;&#x5927;&#x5C0F;size&#xFF0C;&#x50CF;&#x7D20;dpi&#x7B49;&#x3002;</p>
@@ -1417,7 +1403,7 @@ ax<span class="token punctuation">.</span>yaxis<span class="token punctuation">.
 
 plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://img-blog.csdnimg.cn/201911212246104.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p><a href="https://img-blog.csdnimg.cn/201911212246104.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" data-lightbox="28db1107-f929-42b4-b7d2-8213846e6aa6" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/201911212246104.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <h2 id="formatters-and-locators"><a name="formatters-and-locators" class="anchor-navigation-ex-anchor" href="#formatters-and-locators"><i class="fa fa-link" aria-hidden="true"></i></a>Formatters and Locators</h2>
 <pre class="language-"><code class="lang-python"><span class="token string">&apos;Axis.get_major_formatter&apos;</span>        Get the formatter of the major ticker
 <span class="token string">&apos;Axis.get_major_locator&apos;</span>        Get the locator of the major ticker
@@ -1434,7 +1420,7 @@ ax<span class="token punctuation">.</span>set_xlim<span class="token punctuation
 ax<span class="token punctuation">.</span>yaxis<span class="token punctuation">.</span>set_minor_formatter<span class="token punctuation">(</span>NullFormatter<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 ax<span class="token punctuation">.</span>yaxis<span class="token punctuation">.</span>set_major_locator<span class="token punctuation">(</span>FixedLocator<span class="token punctuation">(</span>np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">90</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20191121231137319.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;">
+<p><a href="https://img-blog.csdnimg.cn/20191121231137319.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" data-lightbox="e832c696-1249-4c98-b7af-886a514e90da" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20191121231137319.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a>
 <a href="https://blog.csdn.net/HHG20171226/article/details/102826787#httpsblogcsdnnetHHG20171226articledetails101315011_280" target="_blank">&#x4E3B;&#x3001;&#x526F;&#x523B;&#x5EA6;&#x5BC6;&#x5EA6;&#x7684;&#x8BBE;&#x7F6E;</a></p>
 <pre class="language-"><code class="lang-python">ax<span class="token punctuation">.</span>xaxis<span class="token punctuation">.</span>set_major_locator<span class="token punctuation">(</span>MultipleLocator<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># &#x8BBE;&#x7F6E;20&#x500D;&#x6570;</span>
 ax<span class="token punctuation">.</span>xaxis<span class="token punctuation">.</span>set_major_formatter<span class="token punctuation">(</span>FormatStrFormatter<span class="token punctuation">(</span><span class="token string">&apos;%5.1f&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># &#x8BBE;&#x7F6E;&#x6587;&#x672C;&#x683C;&#x5F0F;</span>
@@ -1571,7 +1557,7 @@ ax<span class="token punctuation">.</span>spines<span class="token punctuation">
 ax<span class="token punctuation">.</span>xaxis<span class="token punctuation">.</span>set_ticks_position<span class="token punctuation">(</span><span class="token string">&apos;bottom&apos;</span><span class="token punctuation">)</span>
 ax<span class="token punctuation">.</span>yaxis<span class="token punctuation">.</span>set_ticks_position<span class="token punctuation">(</span><span class="token string">&apos;left&apos;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20191122120707977.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p><a href="https://img-blog.csdnimg.cn/20191122120707977.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" data-lightbox="fd4ceb7a-845d-4d18-b409-f3d971dd98cc" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20191122120707977.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <ol>
 <li><p>```python
 import matplotlib.pyplot as plt
@@ -1613,11 +1599,11 @@ ax.plot(x,y)
 adjust_spines(ax,[&apos;bottom&apos;])</p>
 <p>plt.show()</p>
 <p>```</p>
-<p><img src="https://img-blog.csdnimg.cn/20191122120807347.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<p><a href="https://img-blog.csdnimg.cn/20191122120807347.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" data-lightbox="c1b1f4af-efaa-478a-9c43-a3d2afe3aa20" data-title="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;" target="_blank"><img src="https://img-blog.csdnimg.cn/20191122120807347.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hIRzIwMTcxMjI2,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></a></p>
 <p>......
 &#x66F4;&#x591A;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="https://matplotlib.org/api/axis_api.html" target="_blank">https://matplotlib.org/api/axis_api.html</a> </p>
-<footer class="page-footer"><span class="copyright">   </span><span class="footer-modification">Update time&#xFF1A;
-2020-05-23 15:50
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-23 
 </span></footer>
                                 
                                 </section>
@@ -1661,13 +1647,12 @@ adjust_spines(ax,[&apos;bottom&apos;])</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"面向对象绘图","level":"2.1.22","depth":2,"next":{"title":"折线图","level":"3.1","depth":1,"path":"Chapter2/README.md","ref":"Chapter2/README.md","articles":[]},"previous":{"title":"图片保存","level":"2.1.21","depth":2,"path":"Chapter1/图片保存.md","ref":"Chapter1/图片保存.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","expandable-chapters-small@^0.1.7","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","hide-element","code","tbfed-pagefooter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"expandable-chapters-small":{},"local-video":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"Chapter1/面向对象绘图.md","mtime":"2020-05-23T07:50:39.042Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T00:52:42.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"面向对象绘图","level":"2.1.22","depth":2,"next":{"title":"折线图","level":"3.1","depth":1,"path":"Chapter2/README.md","ref":"Chapter2/README.md","articles":[]},"previous":{"title":"图片保存","level":"2.1.21","depth":2,"path":"Chapter1/图片保存.md","ref":"Chapter1/图片保存.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter1/面向对象绘图.md","mtime":"2020-05-23T07:50:39.042Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-12T13:26:03.038Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1700,11 +1685,7 @@ adjust_spines(ax,[&apos;bottom&apos;])</p>
         
     
         
-        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
         
@@ -1716,7 +1697,11 @@ adjust_spines(ax,[&apos;bottom&apos;])</p>
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         
@@ -1731,8 +1716,6 @@ adjust_spines(ax,[&apos;bottom&apos;])</p>
         <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
-
-    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>

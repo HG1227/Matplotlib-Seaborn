@@ -4,14 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>数据集的分布 · GitBook 使用教程</title>
+        <title>数据集的分布 · python 学习记录</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        <meta name="author" content="zhangjikai">
+        <meta name="author" content="HHG">
         
         
-    
     
     <link rel="stylesheet" href="../gitbook/style.css">
 
@@ -26,7 +25,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
                 
             
                 
@@ -50,11 +49,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
                 
             
                 
@@ -66,11 +61,15 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
                 
@@ -101,11 +100,7 @@
         
     
 
-
-    
-
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -120,15 +115,6 @@
     
     
     <link rel="prev" href="分类数据图.html" />
-    
-
-    
-        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
-    
-    
-        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
-    
-    
     
 
     </head>
@@ -1304,32 +1290,32 @@ sns<span class="token punctuation">.</span><span class="token builtin">set</span
 x <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span>size<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">)</span>
 sns<span class="token punctuation">.</span>distplot<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511100654.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511100654.png" data-lightbox="302b83c5-fdd9-4c3d-94df-f999f994b62d" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511100654.png" alt="undefined"></a></p>
 <h3 id="&#x76F4;&#x65B9;&#x56FE;"><a name="&#x76F4;&#x65B9;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x76F4;&#x65B9;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76F4;&#x65B9;&#x56FE;</h3>
 <p>&#x76F4;&#x65B9;&#x56FE;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x90FD;&#x5F88;&#x719F;&#x6089;&#x4E86;&#xFF0C;<code>matplotlib</code>&#x4E2D;&#x4E5F;&#x6709;&#x4E00;&#x4E2A;<code>hist()</code>&#x51FD;&#x6570;&#x6765;&#x7ED8;&#x5236;&#x76F4;&#x65B9;&#x56FE;&#x3002;&#x76F4;&#x65B9;&#x56FE;&#x5C06;&#x6570;&#x636E;&#x5212;&#x5206;&#x5230;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x6876;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x6BCF;&#x4E2A;&#x6876;&#x4E2D;&#x7684;&#x6837;&#x672C;&#x8FDB;&#x884C;&#x8BA1;&#x6570;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x4EE5;&#x957F;&#x6761;&#x7684;&#x5F62;&#x5F0F;&#x753B;&#x51FA;&#x6765;&#x3002;</p>
 <p>&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x6F14;&#x793A;&#x6765;&#x7406;&#x89E3;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF1A;&#x53BB;&#x6389;&#x5BC6;&#x5EA6;&#x66F2;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x52A0;&#x4E00;&#x4E2A;&#x201C;&#x5730;&#x6BEF;&#x56FE;&#x201D;&#xFF08;<code>rugplot</code>&#xFF09;&#x3002;&#x5730;&#x6BEF;&#x56FE;&#x4F1A;&#x5728;&#x6BCF;&#x4E2A;&#x89C2;&#x6D4B;&#x503C;&#x7684;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5782;&#x76F4;&#x7684;&#x7EBF;&#x6BB5;&#x5C0F;&#x6807;&#x8BB0;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>rugplot()</code>&#x6765;&#x4EC5;&#x4EC5;&#x7ED8;&#x5236;&#x5730;&#x6BEF;&#x56FE;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B83;&#x5728;<code>distplot()</code>&#x4E2D;&#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86;&#x652F;&#x6301;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python"><span class="token comment"># &#x9AD8;&#x5EA6;&#x548C;&#x4E0B;&#x65B9;&#x6807;&#x8BB0;&#x7684;&#x5BC6;&#x96C6;&#x5EA6;&#x662F;&#x6210;&#x6B63;&#x6BD4;&#x7684;</span>
 sns<span class="token punctuation">.</span>distplot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> kde<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> rug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511100913.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511100913.png" data-lightbox="dba9c340-78c0-4ea0-aefc-21c6cdfa4e0a" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511100913.png" alt="undefined"></a></p>
 <h4 id="&#x53C2;&#x6570;-bins"><a name="&#x53C2;&#x6570;-bins" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;-bins"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x6570; bins</h4>
 <p>&#x5728;&#x7ED8;&#x5236;&#x76F4;&#x65B9;&#x56FE;&#x65F6;&#xFF0C;&#x6700;&#x4E3B;&#x8981;&#x7684;&#x9009;&#x62E9;&#x5C31;&#x662F;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x6876;&#x7684;&#x6570;&#x91CF;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x7684;&#x8FB9;&#x754C;&#x3002;<code>distplot()</code>&#x9ED8;&#x8BA4;&#x4F1A;&#x7528;&#x4E00;&#x6761;&#x7B80;&#x5355;&#x7684;&#x89C4;&#x5219;&#x6765;&#x731C;&#x6D4B;&#x591A;&#x5C11;&#x4E2A;&#x6570;&#x636E;&#x6876;&#x6700;&#x5408;&#x9002;&#xFF0C;&#x4E0D;&#x8FC7;&#x5C1D;&#x8BD5;&#x66F4;&#x591A;&#x6216;&#x66F4;&#x5C11;&#x7684;&#x5206;&#x6876;&#x4E5F;&#x8BB8;&#x80FD;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x63ED;&#x793A;&#x6570;&#x636E;&#x7684;&#x66F4;&#x591A;&#x7279;&#x6027;&#xFF1A;</p>
 <pre class="language-"><code>sns.distplot(x, bins=20, kde=False, rug=True)
-</code></pre><p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101057.png"></p>
+</code></pre><p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101057.png" data-lightbox="4cb30b24-c97b-4d33-bcb9-bfac8db7de2c" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101057.png" alt="undefined"></a></p>
 <h3 id="&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;"><a name="&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;" class="anchor-navigation-ex-anchor" href="#&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;</h3>
 <p>&#x6211;&#x4EEC;&#x5BF9;&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;&#x53EF;&#x80FD;&#x4E0D;&#x592A;&#x719F;&#x6089;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x5728;&#x5C55;&#x793A;&#x6570;&#x636E;&#x5206;&#x5E03;&#x5F62;&#x72B6;&#x65B9;&#x9762;&#x5F88;&#x6709;&#x7528;&#x3002;&#x4E0E;&#x76F4;&#x65B9;&#x56FE;&#x7C7B;&#x4F3C;&#xFF0C;<strong>KDE&#x56FE;&#x7528;&#x9AD8;&#x5EA6;&#x5BF9;&#x89C2;&#x6D4B;&#x503C;&#x7684;&#x5BC6;&#x5EA6;&#x8FDB;&#x884C;&#x7F16;&#x7801;</strong>&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">sns<span class="token punctuation">.</span>distplot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> hist<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> rug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101310.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101310.png" data-lightbox="a74bf046-4e8e-488c-9808-69aae742c977" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101310.png" alt="undefined"></a></p>
 <p>&#x76F8;&#x5BF9;&#x4E8E;&#x76F4;&#x65B9;&#x56FE;&#xFF0C;KDE&#x56FE;&#x7684;&#x7ED8;&#x5236;&#x6709;&#x66F4;&#x9AD8;&#x7684;&#x8BA1;&#x7B97;&#x590D;&#x6742;&#x5EA6;&#x3002;&#x5728;KDE&#x7684;&#x8BA1;&#x7B97;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x6BCF;&#x4E2A;&#x89C2;&#x6D4B;&#x503C;&#x4F1A;&#x88AB;&#x66FF;&#x6362;&#x4E3A;&#x4E00;&#x6761;&#x4EE5;&#x8BE5;&#x89C2;&#x6D4B;&#x70B9;&#x4E3A;&#x4E2D;&#x5FC3;&#x7684;&#x6B63;&#x6001;&#x66F2;&#x7EBF;</p>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101636.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101636.png" data-lightbox="12813b73-9605-4e3f-a991-85fe9cb88298" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101636.png" alt="undefined"></a></p>
 <p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x6240;&#x6709;&#x7684;&#x66F2;&#x7EBF;&#x90FD;&#x53E0;&#x52A0;&#x8D77;&#x6765;&#xFF0C;&#x5F97;&#x5230;&#x6BCF;&#x4E2A;&#x70B9;&#x4E0A;&#x7684;&#x5BC6;&#x5EA6;&#x3002;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x628A;&#x6700;&#x7EC8;&#x7684;&#x66F2;&#x7EBF;&#x6B63;&#x5219;&#x5316;&#xFF08;&#x5F52;&#x4E00;&#x5316;&#xFF09;&#xFF0C;&#x8FD9;&#x6837;&#x66F2;&#x7EBF;&#x4E0B;&#x65B9;&#x7684;&#x9762;&#x79EF;&#x52A0;&#x8D77;&#x6765;&#x521A;&#x597D;&#x662F;1</p>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101750.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101750.png" data-lightbox="792861b2-5411-4a2f-b654-d5d91033ec3c" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101750.png" alt="undefined"></a></p>
 <p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x7528;<code>kdeplot()</code>&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x4F1A;&#x5F97;&#x5230;&#x540C;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x3002;<code>distplot()</code>&#x4E2D;&#x96C6;&#x6210;&#x4E86;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x6211;&#x4EEC;&#x53EA;&#x60F3;&#x7ED8;&#x5236;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;&#x56FE;&#x65F6;&#xFF0C;<code>kdeplot()</code>&#x80FD;&#x63D0;&#x4F9B;&#x66F4;&#x76F4;&#x63A5;&#x7684;&#x63A5;&#x53E3;&#x4EE5;&#x53CA;&#x66F4;&#x591A;&#x7684;&#x9009;&#x9879;&#x3002;</p>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101856.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101856.png" data-lightbox="a05288da-7c6a-474d-aa15-c4b4702ba707" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511101856.png" alt="undefined"></a></p>
 <h3 id="&#x62DF;&#x5408;&#x6307;&#x5B9A;&#x7684;&#x5206;&#x5E03;"><a name="&#x62DF;&#x5408;&#x6307;&#x5B9A;&#x7684;&#x5206;&#x5E03;" class="anchor-navigation-ex-anchor" href="#&#x62DF;&#x5408;&#x6307;&#x5B9A;&#x7684;&#x5206;&#x5E03;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x62DF;&#x5408;&#x6307;&#x5B9A;&#x7684;&#x5206;&#x5E03;</h3>
 <p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>distplot()</code>&#x5C06;&#x6570;&#x636E;&#x62DF;&#x5408;&#x5230;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x5206;&#x5E03;&#x5F62;&#x6001;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x89C6;&#x89C9;&#x4E0A;&#x8BC4;&#x4F30;&#x5B83;&#x4EEC;&#x6709;&#x591A;&#x63A5;&#x8FD1;&#xFF1A;</p>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102105.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102105.png" data-lightbox="9db6388c-e7fb-41d5-b7e5-74c7f7d35940" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102105.png" alt="undefined"></a></p>
 <h2 id="&#x4E8C;&#x5143;&#x5206;&#x5E03;&#x53EF;&#x89C6;&#x5316;"><a name="&#x4E8C;&#x5143;&#x5206;&#x5E03;&#x53EF;&#x89C6;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x5143;&#x5206;&#x5E03;&#x53EF;&#x89C6;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x5143;&#x5206;&#x5E03;&#x53EF;&#x89C6;&#x5316;</h2>
 <p>&#x5C06;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x8054;&#x5408;&#x5206;&#x5E03;&#x5F62;&#x6001;&#x53EF;&#x89C6;&#x5316;&#x51FA;&#x6765;&#x5F80;&#x5F80;&#x4F1A;&#x5F88;&#x6709;&#x7528;&#x3002;&#x5728;<code>seaborn</code>&#x4E2D;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528;<code>jointplot()</code>&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4F1A;&#x751F;&#x6210;&#x591A;&#x4E2A;&#x9762;&#x677F;&#xFF0C;&#x4E0D;&#x4EC5;&#x5C55;&#x793A;&#x4E86;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x4E5F;&#x5728;&#x4E24;&#x4E2A;&#x5750;&#x6807;&#x8F74;&#x4E0A;&#x5206;&#x522B;&#x5C55;&#x793A;&#x4E86;&#x6BCF;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x5206;&#x5E03;&#x3002;</p>
 <h3 id="&#x6563;&#x70B9;&#x56FE;"><a name="&#x6563;&#x70B9;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x6563;&#x70B9;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6563;&#x70B9;&#x56FE;</h3>
@@ -1340,42 +1326,42 @@ df <span class="token operator">=</span> pd<span class="token punctuation">.</sp
 
 sns<span class="token punctuation">.</span>jointplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&quot;x&quot;</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">&quot;y&quot;</span><span class="token punctuation">,</span> data<span class="token operator">=</span>df<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102416.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102416.png" data-lightbox="c0851c71-c8f8-44ff-b9af-260b3ed70008" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102416.png" alt="undefined"></a></p>
 <h3 id="&#x516D;&#x8FB9;&#x56FE;"><a name="&#x516D;&#x8FB9;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x516D;&#x8FB9;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516D;&#x8FB9;&#x56FE;</h3>
 <p>&#x516D;&#x8FB9;&#x56FE;&#xFF08;Hexbin&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x89C6;&#x4E3A;&#x4E8C;&#x7EF4;&#x4E16;&#x754C;&#x4E2D;&#x7684;&#x76F4;&#x65B9;&#x56FE;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5C55;&#x793A;&#x4E86;&#x6BCF;&#x4E2A;&#x5C0F;&#x516D;&#x8FB9;&#x5F62;&#x4E2D;&#x89C2;&#x6D4B;&#x70B9;&#x7684;&#x6570;&#x91CF;&#x3002;&#x8FD9;&#x79CD;&#x56FE;&#x5728;&#x5927;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x8868;&#x73B0;&#x6700;&#x4F73;&#x3002;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<code>matplotlib</code>&#x7684;<code>plt.hexbin</code>&#x51FD;&#x6570;&#x4EE5;&#x53CA;<code>seaborn</code>&#x7684;<code>jointplot(kind=&quot;hex&quot;)</code>&#x90FD;&#x53EF;&#x4EE5;&#x7ED8;&#x5236;&#x5B83;&#x3002;</p>
 <pre class="language-"><code class="lang-python">x<span class="token punctuation">,</span> y <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>multivariate_normal<span class="token punctuation">(</span>mean<span class="token punctuation">,</span> cov<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T
 <span class="token keyword">with</span> sns<span class="token punctuation">.</span>axes_style<span class="token punctuation">(</span><span class="token string">&quot;white&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     sns<span class="token punctuation">.</span>jointplot<span class="token punctuation">(</span>x<span class="token operator">=</span>x<span class="token punctuation">,</span> y<span class="token operator">=</span>y<span class="token punctuation">,</span> kind<span class="token operator">=</span><span class="token string">&quot;hex&quot;</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">&quot;k&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102724.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102724.png" data-lightbox="fdb7f877-509c-4b75-aebe-5d861436be5a" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102724.png" alt="undefined"></a></p>
 <h3 id="&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;"><a name="&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;" class="anchor-navigation-ex-anchor" href="#&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;</h3>
 <p>&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;&#x4E5F;&#x9002;&#x7528;&#x4E8E;&#x4E8C;&#x5143;&#x7684;&#x60C5;&#x51B5;&#x3002;<strong>&#x5728;<code>seaborn</code>&#x4E2D;&#xFF0C;&#x8FD9;&#x79CD;&#x56FE;&#x4F1A;&#x4EE5;&#x7B49;&#x9AD8;&#x7EBF;&#x7684;&#x65B9;&#x5F0F;&#x5C55;&#x793A;&#x51FA;&#x6765;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;<code>jointplot(kind=&quot;kde&quot;)</code>&#x6765;&#x7ED8;&#x5236;&#x5B83;</p>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102925.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102925.png" data-lightbox="568f2161-ec1c-4dc0-a7c1-a0c38f73be74" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511102925.png" alt="undefined"></a></p>
 <p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>kdeplot()</code>&#x6765;&#x7ED8;&#x5236;&#x4E8C;&#x7EF4;&#x7684;&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;&#x56FE;&#x3002;&#x8FD9;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x5728;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x7684;<code>matplotlib</code>&#x5750;&#x6807;&#x8F74;&#x4E0A;&#xFF08;&#x5305;&#x62EC;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x5750;&#x6807;&#x8F74;&#x4F53;&#x7CFB;&#xFF09;&#x7ED8;&#x5236;&#x8FD9;&#x7C7B;&#x56FE;&#x5F62;&#x3002;&#x4F5C;&#x4E3A;&#x5BF9;&#x6BD4;&#xFF0C;&#x5728;<code>jointplot()</code>&#x4E2D;&#x6211;&#x4EEC;&#x53EA;&#x80FD;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x56FE;&#x6765;&#x751F;&#x6210;&#x6838;&#x5BC6;&#x5EA6;&#x4F30;&#x8BA1;&#x56FE;&#x3002;</p>
 <pre class="language-"><code class="lang-python">f<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 sns<span class="token punctuation">.</span>kdeplot<span class="token punctuation">(</span>df<span class="token punctuation">.</span>x<span class="token punctuation">,</span> df<span class="token punctuation">.</span>y<span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">)</span>
 sns<span class="token punctuation">.</span>rugplot<span class="token punctuation">(</span>df<span class="token punctuation">.</span>x<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">&quot;g&quot;</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">)</span>
 sns<span class="token punctuation">.</span>rugplot<span class="token punctuation">(</span>df<span class="token punctuation">.</span>y<span class="token punctuation">,</span> vertical<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> ax<span class="token operator">=</span>ax<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103103.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103103.png" data-lightbox="f4d65885-1e93-4c11-9369-c6fbefc422c5" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103103.png" alt="undefined"></a></p>
 <p><code>jointplot()</code>&#x51FD;&#x6570;&#x57FA;&#x4E8E;<code>JointGrid</code>&#x5BF9;&#x8C61;&#x6765;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>JointGrid</code>&#x6765;&#x83B7;&#x5F97;&#x66F4;&#x9AD8;&#x7684;&#x7075;&#x6D3B;&#x6027;&#x3002;<code>jointplot()</code>&#x5728;&#x7ED8;&#x5236;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>JointGrid</code>&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B83;&#x6765;&#x589E;&#x52A0;&#x66F4;&#x591A;&#x56FE;&#x5C42;&#x6216;&#x8005;&#x8C03;&#x6574;&#x5176;&#x4ED6;&#x7EC6;&#x8282;</p>
 <pre class="language-"><code class="lang-python">g <span class="token operator">=</span> sns<span class="token punctuation">.</span>jointplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">&quot;x&quot;</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">&quot;y&quot;</span><span class="token punctuation">,</span> data<span class="token operator">=</span>df<span class="token punctuation">,</span> kind<span class="token operator">=</span><span class="token string">&quot;kde&quot;</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">&quot;m&quot;</span><span class="token punctuation">)</span>
 g<span class="token punctuation">.</span>plot_joint<span class="token punctuation">(</span>plt<span class="token punctuation">.</span>scatter<span class="token punctuation">,</span> c<span class="token operator">=</span><span class="token string">&quot;w&quot;</span><span class="token punctuation">,</span> s<span class="token operator">=</span><span class="token number">30</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> marker<span class="token operator">=</span><span class="token string">&quot;+&quot;</span><span class="token punctuation">)</span>
 g<span class="token punctuation">.</span>ax_joint<span class="token punctuation">.</span>collections<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>set_alpha<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
 g<span class="token punctuation">.</span>set_axis_labels<span class="token punctuation">(</span><span class="token string">&quot;$X$&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;$Y$&quot;</span><span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103513.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103513.png" data-lightbox="dd31bc74-c08e-457d-a53f-fc3116d4ce36" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103513.png" alt="undefined"></a></p>
 <h2 id="&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x6210;&#x5BF9;&#x5173;&#x7CFB;&#x7684;&#x53EF;&#x89C6;&#x5316;"><a name="&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x6210;&#x5BF9;&#x5173;&#x7CFB;&#x7684;&#x53EF;&#x89C6;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x6210;&#x5BF9;&#x5173;&#x7CFB;&#x7684;&#x53EF;&#x89C6;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x6210;&#x5BF9;&#x5173;&#x7CFB;&#x7684;&#x53EF;&#x89C6;&#x5316;</h2>
 <p>&#x6210;&#x5BF9;&#x5173;&#x7CFB;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x662F;&#x6307;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x4E24;&#x4E24;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x5047;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x770B;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x4E2D;&#x4E24;&#x4E24;&#x7EC4;&#x5408;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x5408;&#x5206;&#x5E03;&#x60C5;&#x51B5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>pairplot()</code>&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7531;&#x591A;&#x4E2A;&#x5750;&#x6807;&#x8F74;&#x6784;&#x6210;&#x7684;&#x77E9;&#x9635;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x4E24;&#x4E24;&#x4E4B;&#x95F4;&#xFF08;&#x4E00;&#x822C;&#x662F;DataFrame&#x7684;&#x5217;&#x4E4B;&#x95F4;&#x7684;&#x7EC4;&#x5408;&#xFF09;&#x7684;&#x5173;&#x7CFB;&#x5206;&#x522B;&#x7ED8;&#x5236;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x5750;&#x6807;&#x8F74;&#x4E0A;&#x53BB;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x8FD8;&#x4F1A;&#x5C06;&#x6BCF;&#x4E2A;&#x53D8;&#x91CF;&#x81EA;&#x5DF1;&#x7684;&#x5206;&#x5E03;&#x60C5;&#x51B5;&#x753B;&#x5728;&#x5BF9;&#x89D2;&#x7EBF;&#x7684;&#x4F4D;&#x7F6E;&#xFF1A;</p>
 <pre class="language-"><code class="lang-python">iris <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">&quot;iris.csv&quot;</span><span class="token punctuation">)</span>
 sns<span class="token punctuation">.</span>pairplot<span class="token punctuation">(</span>iris<span class="token punctuation">)</span>
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103816.png"></p>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103816.png" data-lightbox="fe380c41-e5e9-43d0-9dab-b8739b597d41" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511103816.png" alt="undefined"></a></p>
 <h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
 <p><a href="https://zhuanlan.zhihu.com/p/52977472" blank="" target="_blank">&#x6570;&#x636E;&#x96C6;&#x7684;&#x5206;&#x5E03;</a> </p>
 <p><a href="" blank=""></a> </p>
-<footer class="page-footer"><span class="copyright">   </span><span class="footer-modification">Update time&#xFF1A;
-2020-05-23 15:50
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-23 
 </span></footer>
                                 
                                 </section>
@@ -1419,13 +1405,12 @@ sns<span class="token punctuation">.</span>pairplot<span class="token punctuatio
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据集的分布","level":"4.1.4","depth":2,"next":{"title":"线性关系展示","level":"4.1.5","depth":2,"path":"Chapter7/线性关系展示.md","ref":"Chapter7/线性关系展示.md","articles":[]},"previous":{"title":"分类数据图","level":"4.1.3","depth":2,"path":"Chapter7/分类数据图.md","ref":"Chapter7/分类数据图.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid-gb3@2.1.0","expandable-chapters-small@^0.1.7","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","hide-element","code","tbfed-pagefooter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"mermaid-gb3":{},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"theme-comscore":{},"prism-themes":{},"expandable-chapters-small":{},"local-video":{},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"Chapter7/数据集的分布.md","mtime":"2020-05-23T07:50:39.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-26T00:52:42.599Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数据集的分布","level":"4.1.4","depth":2,"next":{"title":"线性关系展示","level":"4.1.5","depth":2,"path":"Chapter7/线性关系展示.md","ref":"Chapter7/线性关系展示.md","articles":[]},"previous":{"title":"分类数据图","level":"4.1.3","depth":2,"path":"Chapter7/分类数据图.md","ref":"Chapter7/分类数据图.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter7/数据集的分布.md","mtime":"2020-05-23T07:50:39.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-12T13:26:03.038Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
 
         
-    
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
     
@@ -1458,11 +1443,7 @@ sns<span class="token punctuation">.</span>pairplot<span class="token punctuatio
         
     
         
-        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
         
     
         
@@ -1474,7 +1455,11 @@ sns<span class="token punctuation">.</span>pairplot<span class="token punctuatio
         
     
         
-        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         
@@ -1489,8 +1474,6 @@ sns<span class="token punctuation">.</span>pairplot<span class="token punctuatio
         <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
         
     
-
-    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>
