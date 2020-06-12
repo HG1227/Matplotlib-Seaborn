@@ -1,0 +1,1538 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>控制图像的美学样式(aesthetics) · python 学习记录</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="HHG">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-vs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="选择调色板.html" />
+    
+    
+    <link rel="prev" href="构建结构化多图网格.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">图形设置</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Chapter1/">
+            
+                <a href="../Chapter1/">
+            
+                    
+                    图形基础设置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../Chapter1/figure设置.html">
+            
+                <a href="../Chapter1/figure设置.html">
+            
+                    
+                    figure设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../Chapter1/中文显示问题.html">
+            
+                <a href="../Chapter1/中文显示问题.html">
+            
+                    
+                    中文显示问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Chapter1/Matplotlib刻度线的开启和关闭.html">
+            
+                <a href="../Chapter1/Matplotlib刻度线的开启和关闭.html">
+            
+                    
+                    Matplotlib：刻度线的开启和关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../Chapter1/MatplotlibMatplotlib 刻度线密度设置.html">
+            
+                <a href="../Chapter1/MatplotlibMatplotlib 刻度线密度设置.html">
+            
+                    
+                    Matplotlib：刻度线密度设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../Chapter1/Matplotlib：tick_params.html">
+            
+                <a href="../Chapter1/Matplotlib：tick_params.html">
+            
+                    
+                    Matplotlib：tick_params
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../Chapter1/Matplotlib axes脊柱_坐标轴.html">
+            
+                <a href="../Chapter1/Matplotlib axes脊柱_坐标轴.html">
+            
+                    
+                    Matplotlib：axes脊柱(坐标轴)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../Chapter1/坐标轴标签设置.html">
+            
+                <a href="../Chapter1/坐标轴标签设置.html">
+            
+                    
+                    坐标标签设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../Chapter1/坐标轴显示范围设置.html">
+            
+                <a href="../Chapter1/坐标轴显示范围设置.html">
+            
+                    
+                    坐标轴显示范围设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../Chapter1/设置水平参考线和垂直参考线.html">
+            
+                <a href="../Chapter1/设置水平参考线和垂直参考线.html">
+            
+                    
+                    设置水平参考线和垂直参考线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../Chapter1/设置平行于x轴-y轴的参考区域.html">
+            
+                <a href="../Chapter1/设置平行于x轴-y轴的参考区域.html">
+            
+                    
+                    设置平行于x轴/y轴的参考区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../Chapter1/axes脊柱.html">
+            
+                <a href="../Chapter1/axes脊柱.html">
+            
+                    
+                    axes脊柱(坐标系)设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../Chapter1/Matplotlib subplots绘制多子图.html">
+            
+                <a href="../Chapter1/Matplotlib subplots绘制多子图.html">
+            
+                    
+                    Matplotlib:subplots绘制多子图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="../Chapter1/调整子图间距,调整整体空白.html">
+            
+                <a href="../Chapter1/调整子图间距,调整整体空白.html">
+            
+                    
+                    调整子图间距,调整整体空白
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="../Chapter1/[Matplotlib 线型、标记.html">
+            
+                <a href="../Chapter1/[Matplotlib 线型、标记.html">
+            
+                    
+                    Matplotlib：线型、标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="../Chapter1/Matplotlib 图形填充.html">
+            
+                <a href="../Chapter1/Matplotlib 图形填充.html">
+            
+                    
+                    Matplotlib：图形填充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.16" data-path="../Chapter1/Matplotlib grid栅格设置.html">
+            
+                <a href="../Chapter1/Matplotlib grid栅格设置.html">
+            
+                    
+                    Matplotlib:grid栅格设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.17" data-path="../Chapter1/Matplotlib text注释.html">
+            
+                <a href="../Chapter1/Matplotlib text注释.html">
+            
+                    
+                    Matplotlib text注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.18" data-path="../Chapter1/Matplotlib Annotation注释.html">
+            
+                <a href="../Chapter1/Matplotlib Annotation注释.html">
+            
+                    
+                    Matplotlib：Annotation注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.19" data-path="../Chapter1/Matplotlib Legend图例.html">
+            
+                <a href="../Chapter1/Matplotlib Legend图例.html">
+            
+                    
+                    Matplotlib:Legend 图例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.20" data-path="../Chapter1/颜色库.html">
+            
+                <a href="../Chapter1/颜色库.html">
+            
+                    
+                    颜色库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.21" data-path="../Chapter1/图片保存.html">
+            
+                <a href="../Chapter1/图片保存.html">
+            
+                    
+                    图片保存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.22" data-path="../Chapter1/面向对象绘图.html">
+            
+                <a href="../Chapter1/面向对象绘图.html">
+            
+                    
+                    面向对象绘图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基本图表</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Chapter2/">
+            
+                <a href="../Chapter2/">
+            
+                    
+                    折线图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../Chapter3/">
+            
+                <a href="../Chapter3/">
+            
+                    
+                    散点图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Chapter4/">
+            
+                <a href="../Chapter4/">
+            
+                    
+                    柱状图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../Chapter4/堆叠柱状图.html">
+            
+                <a href="../Chapter4/堆叠柱状图.html">
+            
+                    
+                    堆叠柱状图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../Chapter5/">
+            
+                <a href="../Chapter5/">
+            
+                    
+                    分类图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../Chapter5/利用plt.pcolormesh绘制分类图.html">
+            
+                <a href="../Chapter5/利用plt.pcolormesh绘制分类图.html">
+            
+                    
+                    利用plt.pcolormesh绘制分类图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../Chapter6/">
+            
+                <a href="../Chapter6/">
+            
+                    
+                    热力图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="../Chapter6/热力图.html">
+            
+                <a href="../Chapter6/热力图.html">
+            
+                    
+                    热力图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">seaborn</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    seaborn
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="Seaborn 简介.html">
+            
+                <a href="Seaborn 简介.html">
+            
+                    
+                    Seaborn 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="Seaborn样式设置.html">
+            
+                <a href="Seaborn样式设置.html">
+            
+                    
+                    Seaborn:样式设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="分类数据图.html">
+            
+                <a href="分类数据图.html">
+            
+                    
+                    分类数据图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="数据集的分布.html">
+            
+                <a href="数据集的分布.html">
+            
+                    
+                    数据集的分布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="线性关系展示.html">
+            
+                <a href="线性关系展示.html">
+            
+                    
+                    线性关系展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="构建结构化多图网格.html">
+            
+                <a href="构建结构化多图网格.html">
+            
+                    
+                    构建结构化多图网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.1.7" data-path="控制图像的美学样式aesthetics.html">
+            
+                <a href="控制图像的美学样式aesthetics.html">
+            
+                    
+                    控制图像的美学样式(aesthetics)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="选择调色板.html">
+            
+                <a href="选择调色板.html">
+            
+                    
+                    选择调色板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="seaborn.relplot.html">
+            
+                <a href="seaborn.relplot.html">
+            
+                    
+                    seaborn.relplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="散点图scatterplot.html">
+            
+                <a href="散点图scatterplot.html">
+            
+                    
+                    散点图scatterplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="折线图lineplot.html">
+            
+                <a href="折线图lineplot.html">
+            
+                    
+                    折线图lineplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="分类图catplot.html">
+            
+                <a href="分类图catplot.html">
+            
+                    
+                    分类图catplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="seaborn.stripplot.html">
+            
+                <a href="seaborn.stripplot.html">
+            
+                    
+                    seaborn.stripplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="seaborn.swarmplot.html">
+            
+                <a href="seaborn.swarmplot.html">
+            
+                    
+                    seaborn.swarmplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.15" data-path="箱线图.html">
+            
+                <a href="箱线图.html">
+            
+                    
+                    箱线图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.16" data-path="seaborn.violinplot.html">
+            
+                <a href="seaborn.violinplot.html">
+            
+                    
+                    seaborn.violinplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.17" data-path="seaborn.boxenplot.html">
+            
+                <a href="seaborn.boxenplot.html">
+            
+                    
+                    seaborn.boxenplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.18" data-path="seaborn.barplot.html">
+            
+                <a href="seaborn.barplot.html">
+            
+                    
+                    seaborn.barplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.19" data-path="seaborn.countplot.html">
+            
+                <a href="seaborn.countplot.html">
+            
+                    
+                    seaborn.countplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.20" data-path="seaborn.jointplot.html">
+            
+                <a href="seaborn.jointplot.html">
+            
+                    
+                    seaborn.jointplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.21" data-path="seaborn.pairplot.html">
+            
+                <a href="seaborn.pairplot.html">
+            
+                    
+                    seaborn.pairplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.22" data-path="seaborn.distplot.html">
+            
+                <a href="seaborn.distplot.html">
+            
+                    
+                    seaborn.distplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.23" data-path="seaborn.kdeplot.html">
+            
+                <a href="seaborn.kdeplot.html">
+            
+                    
+                    seaborn.kdeplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.24" data-path="seaborn.lmplot.html">
+            
+                <a href="seaborn.lmplot.html">
+            
+                    
+                    seaborn.lmplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.25" data-path="seaborn.regplot.html">
+            
+                <a href="seaborn.regplot.html">
+            
+                    
+                    seaborn.regplott
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.26" data-path="seaborn.residplot.html">
+            
+                <a href="seaborn.residplot.html">
+            
+                    
+                    seaborn.residplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.27" data-path="seaborn.heatmap.html">
+            
+                <a href="seaborn.heatmap.html">
+            
+                    
+                    seaborn.heatmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.28" data-path="seaborn.FacetGrid.html">
+            
+                <a href="seaborn.FacetGrid.html">
+            
+                    
+                    seaborn.FacetGrid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.29" data-path="seaborn.PairGrid.html">
+            
+                <a href="seaborn.PairGrid.html">
+            
+                    
+                    seaborn.PairGrid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.30" data-path="seaborn.JointGrid.html">
+            
+                <a href="seaborn.JointGrid.html">
+            
+                    
+                    seaborn.JointGrid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.31" data-path="seaborn.set.html">
+            
+                <a href="seaborn.set.html">
+            
+                    
+                    seaborn.set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.32" data-path="seaborn.axes_style.html">
+            
+                <a href="seaborn.axes_style.html">
+            
+                    
+                    seaborn.axes_style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.33" data-path="seaborn.set_style.html">
+            
+                <a href="seaborn.set_style.html">
+            
+                    
+                    seaborn.set_style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.34" data-path="seaborn.plotting_context.html">
+            
+                <a href="seaborn.plotting_context.html">
+            
+                    
+                    seaborn.plotting_context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.35" data-path="seaborn.set_context.html">
+            
+                <a href="seaborn.set_context.html">
+            
+                    
+                    seaborn.set_context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.36" data-path="seaborn.set_color_codes.html">
+            
+                <a href="seaborn.set_color_codes.html">
+            
+                    
+                    seaborn.set_color_codes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.37" data-path="seaborn.set_palette.html">
+            
+                <a href="seaborn.set_palette.html">
+            
+                    
+                    seaborn.set_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.38" data-path="seaborn.color_palette.html">
+            
+                <a href="seaborn.color_palette.html">
+            
+                    
+                    seaborn.color_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.39" data-path="seaborn.husl_palette.html">
+            
+                <a href="seaborn.husl_palette.html">
+            
+                    
+                    seaborn.husl_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.40" data-path="seaborn.hls_palette.html">
+            
+                <a href="seaborn.hls_palette.html">
+            
+                    
+                    seaborn.hls_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.41" data-path="seaborn.cubehelix_palette.html">
+            
+                <a href="seaborn.cubehelix_palette.html">
+            
+                    
+                    seaborn.cubehelix_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.42" data-path="seaborn.dark_palette.html">
+            
+                <a href="seaborn.dark_palette.html">
+            
+                    
+                    seaborn.dark_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.43" data-path="seaborn.light_palette.html">
+            
+                <a href="seaborn.light_palette.html">
+            
+                    
+                    seaborn.light_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.44" data-path="seaborn.diverging_palette.html">
+            
+                <a href="seaborn.diverging_palette.html">
+            
+                    
+                    seaborn.diverging_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.45" data-path="seaborn.mpl_palette.html">
+            
+                <a href="seaborn.mpl_palette.html">
+            
+                    
+                    seaborn.mpl_palette
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.46" data-path="seaborn.despine.html">
+            
+                <a href="seaborn.despine.html">
+            
+                    
+                    seaborn.despine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >控制图像的美学样式(aesthetics)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x63A7;&#x5236;&#x56FE;&#x50CF;&#x7684;&#x7F8E;&#x5B66;&#x6837;&#x5F0F;aesthetics">&#x63A7;&#x5236;&#x56FE;&#x50CF;&#x7684;&#x7F8E;&#x5B66;&#x6837;&#x5F0F;(aesthetics)</a></li><ul><li><a href="#seaborn-&#x56FE;&#x50CF;&#x53C2;&#x6570;">Seaborn &#x56FE;&#x50CF;&#x53C2;&#x6570;</a></li><li><a href="#&#x79FB;&#x9664;&#x5750;&#x6807;&#x8F74;">&#x79FB;&#x9664;&#x5750;&#x6807;&#x8F74;</a></li><li><a href="#&#x8BBE;&#x7F6E;&#x4E34;&#x65F6;&#x56FE;&#x50CF;&#x683C;&#x5F0F;">&#x8BBE;&#x7F6E;&#x4E34;&#x65F6;&#x56FE;&#x50CF;&#x683C;&#x5F0F;</a></li><li><a href="#&#x8986;&#x76D6;&#x63A7;&#x5236;-seaborn-&#x6837;&#x5F0F;&#x7684;&#x5143;&#x7D20;">&#x8986;&#x76D6;&#x63A7;&#x5236; seaborn &#x6837;&#x5F0F;&#x7684;&#x5143;&#x7D20;</a></li><li><a href="#&#x7F29;&#x653E;&#x56FE;&#x50CF;&#x5143;&#x7D20;">&#x7F29;&#x653E;&#x56FE;&#x50CF;&#x5143;&#x7D20;</a></li></ul></ul></div><a href="#&#x63A7;&#x5236;&#x56FE;&#x50CF;&#x7684;&#x7F8E;&#x5B66;&#x6837;&#x5F0F;aesthetics" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x63A7;&#x5236;&#x56FE;&#x50CF;&#x7684;&#x7F8E;&#x5B66;&#x6837;&#x5F0F;aesthetics"><a name="&#x63A7;&#x5236;&#x56FE;&#x50CF;&#x7684;&#x7F8E;&#x5B66;&#x6837;&#x5F0F;aesthetics" class="anchor-navigation-ex-anchor" href="#&#x63A7;&#x5236;&#x56FE;&#x50CF;&#x7684;&#x7F8E;&#x5B66;&#x6837;&#x5F0F;aesthetics"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A7;&#x5236;&#x56FE;&#x50CF;&#x7684;&#x7F8E;&#x5B66;&#x6837;&#x5F0F;(aesthetics)</h1>
+<p>&#x7ED8;&#x5236;&#x6709;&#x5438;&#x5F15;&#x529B;&#x7684;&#x56FE;&#x50CF;&#x5F88;&#x5341;&#x5206;&#x91CD;&#x8981;&#x7684;&#x3002;&#x5F53;&#x4F60;&#x5728;&#x63A2;&#x7D22;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x5E76;&#x4E3A;&#x4F60;&#x81EA;&#x5DF1;&#x505A;&#x56FE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5236;&#x4F5C;&#x4E00;&#x4E9B;&#x8BA9;&#x4EBA;&#x770B;&#x4E86;&#x5FC3;&#x60C5;&#x6109;&#x60A6;&#x7684;&#x56FE;&#x50CF;&#x662F;&#x5F88;&#x597D;&#x7684;&#x3002;&#x53EF;&#x89C6;&#x5316;&#x5BF9;&#x5411;&#x89C2;&#x4F17;&#x4F20;&#x8FBE;&#x91CF;&#x5316;&#x7684;&#x7B80;&#x4ECB;&#x4E5F;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5236;&#x4F5C;&#x80FD;&#x591F;&#x6293;&#x4F4F;&#x67E5;&#x770B;&#x8005;&#x7684;&#x6CE8;&#x610F;&#x529B;&#x5E76;&#x7262;&#x7262;&#x5438;&#x5F15;&#x4F4F;&#x4ED6;&#x4EEC;&#x7684;&#x56FE;&#x50CF;&#x5C31;&#x66F4;&#x6709;&#x5FC5;&#x8981;&#x4E86;&#x3002;</p>
+<p>Matplotlib &#x662F;&#x9AD8;&#x5EA6;&#x53EF;&#x5B9A;&#x5236;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5F88;&#x96BE;&#x77E5;&#x9053;&#x8981;&#x5982;&#x4F55;&#x8BBE;&#x7F6E;&#x56FE;&#x50CF;&#x624D;&#x80FD;&#x4F7F;&#x5F97;&#x56FE;&#x50CF;&#x66F4;&#x52A0;&#x5438;&#x5F15;&#x4EBA;&#x3002;Seaborn &#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x5B9A;&#x5236;&#x597D;&#x7684;&#x4E3B;&#x9898;&#x548C;&#x9AD8;&#x7EA7;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x5236; Matplotlib &#x6240;&#x505A;&#x56FE;&#x50CF;&#x7684;&#x5916;&#x89C2;&#x3002;</p>
+<pre class="language-"><code class="lang-py"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+</code></pre>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x51FD;&#x6570;&#x6765;&#x7ED8;&#x5236;&#x4E00;&#x4E9B;&#x504F;&#x79FB;&#x6B63;&#x5F26;&#x6CE2;&#xFF0C;&#x8FD9;&#x5C06;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x6574;&#x7684;&#x80FD;&#x591F;&#x5F71;&#x54CD;&#x56FE;&#x50CF;&#x98CE;&#x683C;&#x7684;&#x4E0D;&#x540C;&#x53C2;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-py"><span class="token keyword">def</span> <span class="token function">sinplot</span><span class="token punctuation">(</span>flip<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>x <span class="token operator">+</span> i <span class="token operator">*</span> <span class="token number">.5</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">7</span> <span class="token operator">-</span> i<span class="token punctuation">)</span> <span class="token operator">*</span> flip<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8FD9;&#x662F; Matplotlib &#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x7ED8;&#x56FE;&#x5916;&#x89C2;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511200723.jpg" data-lightbox="4caccb99-808f-4593-a228-935c3fb70668" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511200723.jpg" alt="undefined"></a></p>
+<p>&#x4E3A;&#x4E86;&#x5C06;&#x56FE;&#x50CF;&#x7684;&#x98CE;&#x683C;&#x8F6C;&#x53D8;&#x4E3A; seaborn &#x7684;&#x9ED8;&#x8BA4;&#x6837;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5; <a href="../generated/seaborn.set.html#seaborn.set" title="seaborn.set"><code>set()</code></a> &#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511200958.jpg" data-lightbox="b9b3a557-63be-4421-92ab-c5e5ee661cad" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511200958.jpg" alt="undefined"></a></p>
+<p>&#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x5728; 0.8 &#x4E4B;&#x524D;&#x7684; seaborn &#x7248;&#x672C;&#x4E2D;&#xFF0C; <a href="../generated/seaborn.set.html#seaborn.set" title="seaborn.set"><code>set()</code></a> &#x5DF2;&#x7ECF;&#x5728;&#x4F7F;&#x7528; impory &#x8BED;&#x53E5;&#x5BFC;&#x5165;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x88AB;&#x8C03;&#x7528;&#x4E86;&#x3002;&#x4F46;&#x5728;&#x4EE5;&#x540E;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x663E;&#x5F0F;&#x8C03;&#x7528;&#x5B83;&#xFF09;&#x3002;</p>
+<p>Seaborn &#x5C06; matplotlib &#x53C2;&#x6570;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x7EC4;&#x3002;&#x7B2C;&#x4E00;&#x7EC4;&#x8BBE;&#x7F6E;&#x4E86;&#x56FE;&#x50CF;&#x7684;&#x7F8E;&#x672F;&#x98CE;&#x683C;&#xFF0C;&#x7B2C;&#x4E8C;&#x7EC4;&#x5219;&#x5BF9;&#x56FE;&#x50CF;&#x4E2D;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x4E86;&#x63A7;&#x5236;&#xFF0C;&#x4F7F;&#x5F97;&#x56FE;&#x50CF;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x878D;&#x5165;&#x4E0D;&#x540C;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x3002;</p>
+<p>&#x64CD;&#x4F5C;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x63A5;&#x53E3;&#x662F;&#x4E24;&#x5BF9;&#x51FD;&#x6570;&#x3002;&#x8981;&#x63A7;&#x5236;&#x6837;&#x5F0F;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528; <a href="../generated/seaborn.axes_style.html#seaborn.axes_style" title="seaborn.axes_style"><code>axes_style()</code></a> &#x548C; <a href="../generated/seaborn.set_style.html#seaborn.set_style" title="seaborn.set_style"><code>set_style()</code></a> &#x51FD;&#x6570;&#x3002;&#x8981;&#x5BF9;&#x56FE;&#x50CF;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528; <a href="../generated/seaborn.plotting_context.html#seaborn.plotting_context" title="seaborn.plotting_context"><code>plotting_context()</code></a> &#x548C; <a href="../generated/seaborn.set_context.html#seaborn.set_context" title="seaborn.set_context"><code>set_context()</code></a> &#x51FD;&#x6570;&#x3002;&#x5728;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF08;&#x63A7;&#x5236;&#x56FE;&#x50CF;&#x6837;&#x5F0F;&#x4E0E;&#x4FEE;&#x6539;&#x5143;&#x7D20;&#x6837;&#x5F0F;&#xFF09;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5B57;&#x5178;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x51FD;&#x6570;&#x8BBE;&#x7F6E; matplotlib &#x4E2D;&#x76F8;&#x5173;&#x53C2;&#x6570;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<h2 id="seaborn-&#x56FE;&#x50CF;&#x53C2;&#x6570;"><a name="seaborn-&#x56FE;&#x50CF;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#seaborn-&#x56FE;&#x50CF;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>Seaborn &#x56FE;&#x50CF;&#x53C2;&#x6570;</h2>
+<p>&#x6709;&#x4E94;&#x4E2A;&#x9884;&#x8BBE;&#x7684; Seaborn &#x4E3B;&#x9898;&#xFF1A; <code>darkgrid</code>&#xFF0C;<code>whitegrid</code>&#xFF0C;<code>dark</code>&#xFF0C;<code>white</code>&#x4EE5;&#x53CA; <code>ticks</code>&#x3002;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x9002;&#x7528;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x548C;&#x4E2A;&#x4EBA;&#x504F;&#x597D;&#x3002;&#x9ED8;&#x8BA4;&#x4E3B;&#x9898;&#x4E3A; <code>darkgrid</code>&#x3002;&#x5982;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;&#x5750;&#x6807;&#x65B9;&#x683C;&#x6709;&#x52A9;&#x4E8E;&#x5C06;&#x5236;&#x51FA;&#x7684;&#x56FE;&#x50CF;&#x7528;&#x4F5C;&#x5B9A;&#x91CF;&#x4FE1;&#x606F;&#x7684;&#x67E5;&#x9605;&#x8868;&#xFF0C;&#x7070;&#x8272;&#x80CC;&#x666F;&#x4E0A;&#x7684;&#x767D;&#x8272;&#x6709;&#x52A9;&#x4E8E;&#x9632;&#x6B62;&#x7F51;&#x683C;&#x4E0E;&#x8868;&#x793A;&#x6570;&#x636E;&#x7684;&#x884C;&#x53D1;&#x751F;&#x7ADE;&#x4E89;&#x3002; <code>whitegrid</code> &#x4E3B;&#x9898;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x5B83;&#x66F4;&#x9002;&#x7528;&#x4E8E;&#x5305;&#x542B;&#x5927;&#x91CF;&#x6570;&#x636E;&#x5143;&#x7D20;&#x7684;&#x7ED8;&#x56FE;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_style<span class="token punctuation">(</span><span class="token string">&quot;whitegrid&quot;</span><span class="token punctuation">)</span>
+data <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span>size<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
+sns<span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>data<span class="token operator">=</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201110.jpg" data-lightbox="73e56ed5-640f-4427-87e7-8d565b9ef233" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201110.jpg" alt="undefined"></a></p>
+<p>&#x5BF9;&#x8BB8;&#x591A;&#x7684;&#x56FE;&#x50CF;&#x800C;&#x8A00;&#xFF0C;&#xFF08;&#x5C24;&#x5176;&#x662F;&#x5728;&#x4F60;&#x53EA;&#x662F;&#x60F3;&#x901A;&#x8FC7;&#x56FE;&#x50CF;&#x6765;&#x63D0;&#x4F9B;&#x7ED9;&#x4EBA;&#x4EEC;&#x4E00;&#x4E2A;&#x5BF9;&#x6570;&#x636E;&#x6A21;&#x5F0F;&#x7684;&#x5370;&#x8C61;&#x65F6;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x4F5C;&#x62A5;&#x544A;&#x65F6;&#xFF09;&#x5750;&#x6807;&#x7F51;&#x683C;&#x90FD;&#x662F;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_style<span class="token punctuation">(</span><span class="token string">&quot;dark&quot;</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201135.jpg" data-lightbox="87f925ca-9b8f-4ca2-82cc-5f57d109ad26" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201135.jpg" alt="undefined"></a></p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_style<span class="token punctuation">(</span><span class="token string">&quot;white&quot;</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201200.jpg" data-lightbox="343002e1-b980-4560-83d8-839da91253d0" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201200.jpg" alt="undefined"></a></p>
+<p>&#x6709;&#x65F6;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x4E3A;&#x7ED8;&#x56FE;&#x63D0;&#x4F9B;&#x4E00;&#x70B9;&#x989D;&#x5916;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x8FD9;&#x6B63;&#x662F; tick &#x6837;&#x5F0F;&#x7684;&#x7528;&#x6B66;&#x4E4B;&#x5730;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_style<span class="token punctuation">(</span><span class="token string">&quot;ticks&quot;</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201235.jpg" data-lightbox="785a0519-d667-449c-8dc6-61a0f9614c6f" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201235.jpg" alt="undefined"></a></p>
+<h2 id="&#x79FB;&#x9664;&#x5750;&#x6807;&#x8F74;"><a name="&#x79FB;&#x9664;&#x5750;&#x6807;&#x8F74;" class="anchor-navigation-ex-anchor" href="#&#x79FB;&#x9664;&#x5750;&#x6807;&#x8F74;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x79FB;&#x9664;&#x5750;&#x6807;&#x8F74;</h2>
+<p> <code>white</code> &#x6837;&#x5F0F;&#x4E0E; <code>ticks</code> &#x6837;&#x5F0F;&#x7684;&#x597D;&#x5904;&#x662F;&#x90FD;&#x80FD;&#x5220;&#x9664;&#x6240;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x9876;&#x90E8;&#x4E0E;&#x53F3;&#x90E8;&#x5750;&#x6807;&#x8F74;&#x3002;&#x4F7F;&#x7528; seaborn &#x4E2D;&#x7684;&#x51FD;&#x6570; <a href="../generated/seaborn.despine.html#seaborn.despine" title="seaborn.despine"><code>despine()</code></a> &#x53EF;&#x4EE5;&#x6765;&#x79FB;&#x9664;&#x5B83;&#x4EEC;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+sns<span class="token punctuation">.</span>despine<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201328.jpg" data-lightbox="693688ad-7de3-4075-8d8e-9971cde6b5c6" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201328.jpg" alt="undefined"></a></p>
+<p>&#x6709;&#x4E9B;&#x56FE;&#x7684;&#x597D;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x5750;&#x6807;&#x7684;&#x4E3B;&#x8F74;&#x968F;&#x7740;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x504F;&#x79FB;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="../generated/seaborn.despine.html#seaborn.despine" title="seaborn.despine"><code>despine()</code></a>&#x51FD;&#x6570;&#x6765;&#x5B8C;&#x6210;&#x3002;&#x5F53;&#x523B;&#x5EA6;&#x65E0;&#x6CD5;&#x8986;&#x76D6;&#x8F74;&#x7684;&#x6574;&#x4E2A;&#x8303;&#x56F4;&#x65F6;&#xFF0C;<code>trim</code>&#x53C2;&#x6570;&#x5C06;&#x9650;&#x5236;&#x4E0D;&#x53D7;&#x5F71;&#x54CD;&#x7684;&#x5750;&#x6807;&#x8F74;&#x7684;&#x8303;&#x56F4;&#x3002;</p>
+<pre class="language-"><code class="lang-py">f<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span><span class="token punctuation">)</span>
+sns<span class="token punctuation">.</span>violinplot<span class="token punctuation">(</span>data<span class="token operator">=</span>data<span class="token punctuation">)</span>
+sns<span class="token punctuation">.</span>despine<span class="token punctuation">(</span>offset<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> trim<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201358.jpg" data-lightbox="ce970251-89f2-49f1-afee-ead514e3bf43" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201358.jpg" alt="undefined"></a></p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63A7;&#x5236; <a href="../generated/seaborn.despine.html#seaborn.despine" title="seaborn.despine"><code>despine()</code></a>&#x7684;&#x989D;&#x5916;&#x53C2;&#x6570;&#x6765;&#x5220;&#x9664;&#x5750;&#x6807;&#x8F74;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_style<span class="token punctuation">(</span><span class="token string">&quot;whitegrid&quot;</span><span class="token punctuation">)</span>
+sns<span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>data<span class="token operator">=</span>data<span class="token punctuation">,</span> palette<span class="token operator">=</span><span class="token string">&quot;deep&quot;</span><span class="token punctuation">)</span>
+sns<span class="token punctuation">.</span>despine<span class="token punctuation">(</span>left<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201639.jpg" data-lightbox="388c01fd-a0c9-495b-bdd2-8792109b313f" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201639.jpg" alt="undefined"></a></p>
+<h2 id="&#x8BBE;&#x7F6E;&#x4E34;&#x65F6;&#x56FE;&#x50CF;&#x683C;&#x5F0F;"><a name="&#x8BBE;&#x7F6E;&#x4E34;&#x65F6;&#x56FE;&#x50CF;&#x683C;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x7F6E;&#x4E34;&#x65F6;&#x56FE;&#x50CF;&#x683C;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x7F6E;&#x4E34;&#x65F6;&#x56FE;&#x50CF;&#x683C;&#x5F0F;</h2>
+<p>&#x867D;&#x7136;&#x6765;&#x56DE;&#x5207;&#x6362;&#x5F88;&#x5BB9;&#x6613;&#xFF0C;&#x4F46;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;<code>with</code>&#x8BED;&#x53E5;&#x4E2D;&#x4F7F;&#x7528; <a href="../generated/seaborn.axes_style.html#seaborn.axes_style" title="seaborn.axes_style"><code>axes_style()</code></a> &#x51FD;&#x6570;&#x6765;&#x4E34;&#x65F6;&#x8BBE;&#x7F6E;&#x7ED8;&#x56FE;&#x53C2;&#x6570;&#x3002; &#x8FD9;&#x4E5F;&#x5141;&#x8BB8;&#x60A8;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x98CE;&#x683C;&#x7684;&#x5750;&#x6807;&#x8F74;&#x5236;&#x4F5C;&#x56FE;&#x5F62;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">f <span class="token operator">=</span> plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">with</span> sns<span class="token punctuation">.</span>axes_style<span class="token punctuation">(</span><span class="token string">&quot;darkgrid&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    ax <span class="token operator">=</span> f<span class="token punctuation">.</span>add_subplot<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+ax <span class="token operator">=</span> f<span class="token punctuation">.</span>add_subplot<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201837.jpg" data-lightbox="2ffb791e-9dae-4f3e-ba54-1a938716d1b9" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201837.jpg" alt="undefined"></a></p>
+<h2 id="&#x8986;&#x76D6;&#x63A7;&#x5236;-seaborn-&#x6837;&#x5F0F;&#x7684;&#x5143;&#x7D20;"><a name="&#x8986;&#x76D6;&#x63A7;&#x5236;-seaborn-&#x6837;&#x5F0F;&#x7684;&#x5143;&#x7D20;" class="anchor-navigation-ex-anchor" href="#&#x8986;&#x76D6;&#x63A7;&#x5236;-seaborn-&#x6837;&#x5F0F;&#x7684;&#x5143;&#x7D20;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8986;&#x76D6;&#x63A7;&#x5236; seaborn &#x6837;&#x5F0F;&#x7684;&#x5143;&#x7D20;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x81EA;&#x5DF1;&#x5B9A;&#x5236; seaborn &#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7ED9; <a href="../generated/seaborn.axes_style.html#seaborn.axes_style" title="seaborn.axes_style"><code>axes_style()</code></a> &#x4E0E;<a href="../generated/seaborn.set_style.html#seaborn.set_style" title="seaborn.set_style"><code>set_style()</code></a>&#x51FD;&#x6570;&#x4E2D;&#x7684; <code>rc</code> &#x53C2;&#x6570;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5B57;&#x5178;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x60A8;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x6B64;&#x65B9;&#x6CD5;&#x8986;&#x76D6;&#x4F5C;&#x4E3A;&#x6837;&#x5F0F;&#x5B9A;&#x4E49;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x53C2;&#x6570;&#x3002;&#xFF08;&#x4F46;&#x662F;&#xFF0C;&#x66F4;&#x9AD8;&#x7EA7;&#x522B;&#x7684; <a href="../generated/seaborn.set.html#seaborn.set" title="seaborn.set"><code>set()</code></a> &#x51FD;&#x6570;&#x4F1A;&#x83B7;&#x53D6;&#x4EFB;&#x4F55; matplotlib &#x53C2;&#x6570;&#x7684;&#x5B57;&#x5178;&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x770B;&#x770B;&#x5305;&#x542B;&#x54EA;&#x4E9B;&#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53EA;&#x8C03;&#x7528;&#x6CA1;&#x6709;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x5C06;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>axes_style<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code class="lang-py"><span class="token punctuation">{</span><span class="token string">&apos;axes.axisbelow&apos;</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;axes.edgecolor&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;.8&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;axes.facecolor&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;white&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;axes.grid&apos;</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;axes.labelcolor&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;.15&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;axes.spines.bottom&apos;</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;axes.spines.left&apos;</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;axes.spines.right&apos;</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;axes.spines.top&apos;</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;figure.facecolor&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;white&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;font.family&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;sans-serif&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;font.sans-serif&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;Arial&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;DejaVu Sans&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;Liberation Sans&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;Bitstream Vera Sans&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;sans-serif&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;grid.color&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;.8&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;grid.linestyle&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;-&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;image.cmap&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;rocket&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;lines.solid_capstyle&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;round&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;patch.edgecolor&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;w&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;patch.force_edgecolor&apos;</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;text.color&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;.15&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;xtick.bottom&apos;</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;xtick.color&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;.15&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;xtick.direction&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;out&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;xtick.top&apos;</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;ytick.color&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;.15&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;ytick.direction&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;out&apos;</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;ytick.left&apos;</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">,</span>
+ <span class="token string">&apos;ytick.right&apos;</span><span class="token punctuation">:</span> <span class="token boolean">False</span><span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x4E0D;&#x540C;&#x7248;&#x672C;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_style<span class="token punctuation">(</span><span class="token string">&quot;darkgrid&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">&quot;axes.facecolor&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;.9&quot;</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201910.jpg" data-lightbox="782930a7-8066-4410-9fdf-c1c2a4ed414e" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201910.jpg" alt="undefined"></a></p>
+<h2 id="&#x7F29;&#x653E;&#x56FE;&#x50CF;&#x5143;&#x7D20;"><a name="&#x7F29;&#x653E;&#x56FE;&#x50CF;&#x5143;&#x7D20;" class="anchor-navigation-ex-anchor" href="#&#x7F29;&#x653E;&#x56FE;&#x50CF;&#x5143;&#x7D20;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F29;&#x653E;&#x56FE;&#x50CF;&#x5143;&#x7D20;</h2>
+<p>&#x4E00;&#x7EC4;&#x72EC;&#x7ACB;&#x7684;&#x53C2;&#x6570;&#x63A7;&#x5236;&#x7ED8;&#x56FE;&#x5143;&#x7D20;&#x7684;&#x6BD4;&#x4F8B;&#xFF0C;&#x8FD9;&#x5141;&#x8BB8;&#x60A8;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x5236;&#x4F5C;&#x5728;&#x9002;&#x5408;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x56FE;&#x7247;&#x573A;&#x666F;&#x4E0B;&#x7684;&#x56FE;&#x7247;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x8C03;&#x7528; <a href="../generated/seaborn.set.html#seaborn.set" title="seaborn.set"><code>set()</code></a>&#x6765;&#x91CD;&#x7F6E;&#x9ED8;&#x8BA4;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6309;&#x7167;&#x76F8;&#x5BF9;&#x5927;&#x5C0F;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5E8F;&#xFF0C;&#x56DB;&#x4E2A;&#x9884;&#x8BBE;&#x73AF;&#x5883;&#x662F; <code>paper</code>&#xFF0C; <code>notebook</code>&#xFF0C; <code>talk</code>&#x4E0E; <code>poster</code>&#x3002; <code>notebook</code>&#x6837;&#x5F0F;&#x662F;&#x9ED8;&#x8BA4;&#x6837;&#x5F0F;&#xFF0C;&#x4E0A;&#x6587;&#x4E2D;&#x7684;&#x56FE;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x8BE5;&#x6837;&#x5F0F;&#x7ED8;&#x5236;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_context<span class="token punctuation">(</span><span class="token string">&quot;paper&quot;</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201950.jpg" data-lightbox="0ff8a0d6-dcd0-4b08-8d42-f5661429c088" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511201950.jpg" alt="undefined"></a></p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_context<span class="token punctuation">(</span><span class="token string">&quot;talk&quot;</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511202022.jpg" data-lightbox="147486be-afb8-4c7f-a122-301a4a4cc9b1" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511202022.jpg" alt="undefined"></a></p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_context<span class="token punctuation">(</span><span class="token string">&quot;poster&quot;</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511202056.jpg" data-lightbox="e95cc5a0-5b96-4a20-91e4-9484dae4179e" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511202056.jpg" alt="undefined"></a></p>
+<p>&#x60A8;&#x73B0;&#x5728;&#x77E5;&#x9053;&#x7684;&#x5173;&#x4E8E;&#x6837;&#x5F0F;&#x51FD;&#x6570;&#x7684;&#x5927;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x5E94;&#x8BE5;&#x8F6C;&#x79FB;&#x5230;&#x73AF;&#x5883;&#x51FD;&#x6570;&#x4E2D;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x8C03;&#x7528; <a href="../generated/seaborn.set_context.html#seaborn.set_context" title="seaborn.set_context"><code>set_context()</code></a> &#x65F6;&#x6307;&#x5B9A;&#x73AF;&#x5883;&#x7684;&#x540D;&#x5B57;&#x6765;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5B57;&#x5178;&#x6765;&#x8986;&#x76D6;&#x539F;&#x6709;&#x7684;&#x53C2;&#x6570;&#x503C;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x5728;&#x8F6C;&#x6362;&#x73AF;&#x5883;&#x7684;&#x65F6;&#x5019;&#x72EC;&#x7ACB;&#x5730;&#x5BF9;&#x5B57;&#x7B26;&#x5143;&#x7D20;&#x7684;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x7F29;&#x653E;&#x3002;&#xFF08;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x4E5F;&#x80FD;&#x591F;&#x9876;&#x5C42;&#x7684; <a href="../generated/seaborn.set.html#seaborn.set" title="seaborn.set"><code>set()</code></a> &#x51FD;&#x6570;&#x6765;&#x5B9E;&#x73B0;&#xFF09;&#x3002;</p>
+<pre class="language-"><code class="lang-py">sns<span class="token punctuation">.</span>set_context<span class="token punctuation">(</span><span class="token string">&quot;notebook&quot;</span><span class="token punctuation">,</span> font_scale<span class="token operator">=</span><span class="token number">1.5</span><span class="token punctuation">,</span> rc<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">&quot;lines.linewidth&quot;</span><span class="token punctuation">:</span> <span class="token number">2.5</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+sinplot<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511202149.jpg" data-lightbox="cc64496c-4c7c-4114-a168-fbb58e6872f2" data-title="undefined" target="_blank"><img src="https://raw.githubusercontent.com/HG1227/image/master/img_tuchuang/20200511202149.jpg" alt="undefined"></a></p>
+<p>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x6682;&#x65F6;&#x7684;&#x901A;&#x8FC7;&#x5D4C;&#x5957;&#x5728; <code>with</code> &#x8BED;&#x53E5;&#x4E0B;&#x7684;&#x8BED;&#x53E5;&#x6765;&#x5B9E;&#x73B0;&#x56FE;&#x50CF;&#x7684;&#x7F29;&#x653E;&#x3002;</p>
+<p>&#x6837;&#x5F0F;&#x548C;&#x73AF;&#x5883;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="../generated/seaborn.set.html#seaborn.set" title="seaborn.set"><code>set()</code></a> &#x51FD;&#x6570;&#x5FEB;&#x901F;&#x914D;&#x7F6E;&#x3002; &#x6B64;&#x51FD;&#x6570;&#x8FD8;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x8C03;&#x8272;&#x677F;&#xFF0C;&#x4F46;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x4ECB;&#x7ECD;&#x5C06;&#x5728;&#x672C;&#x6559;&#x7A0B;&#x7684; <a href="color_palettes.html#palette-tutorial">&#x4E0B;&#x4E00;&#x8282;</a> &#x8FDB;&#x884C;&#x53D9;&#x8FF0;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
+2020-05-23 
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="构建结构化多图网格.html" class="navigation navigation-prev " aria-label="Previous page: 构建结构化多图网格">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="选择调色板.html" class="navigation navigation-next " aria-label="Next page: 选择调色板">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"控制图像的美学样式(aesthetics)","level":"4.1.7","depth":2,"next":{"title":"选择调色板","level":"4.1.8","depth":2,"path":"Chapter7/选择调色板.md","ref":"Chapter7/选择调色板.md","articles":[]},"previous":{"title":"构建结构化多图网格","level":"4.1.6","depth":2,"path":"Chapter7/构建结构化多图网格.md","ref":"Chapter7/构建结构化多图网格.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter7/控制图像的美学样式aesthetics.md","mtime":"2020-05-23T07:50:39.076Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-12T13:26:03.038Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
