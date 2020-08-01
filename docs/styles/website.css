@@ -1,27 +1,42 @@
 /* CSS for website */
 
 h1{
+	font-size: 26px !important;
     padding-bottom: 1px;
 	color: #452489;
 	font-weight: bold;
+	text-align: center !important;
 }
+h1:after {
+  content: '';
+  display: block;
+  margin: 0.2em auto 0;
+  width: 100px;
+  height: 2px;
+  border-bottom: 2px solid var(--main-6);
+}
+
 h2{
-	
-    border-bottom: 1px solid #EFEAEA;
+	font-size: 24px !important;
+   
     padding-bottom: 1px;
 	color: #452489;
 	font-weight: bold;
+	padding-left:12px;
+	border-left: 9px solid #cd5c5c;
 }
 h3{
 	
-    
+    font-size: 20px;
     padding-bottom: 1px;
-	color: #483d8b;
+	color: #4682b4;
 	font-weight: bold;
+	padding-left:10px;
+	border-left: 5px solid #cd5c5c;
 }
 h4{
 	
-    
+    font-size: 18px;
     padding-bottom: 1px;
 	color: #008080;
 	font-weight: bold;
@@ -44,7 +59,7 @@ h4{
 .book .book-body .page-wrapper .page-inner section.normal hr {
     height: 0px;
     padding: 0;
-    margin: 1.1em 0;
+    margin: 1 em 0;
     overflow: hidden;
 
 }
@@ -102,7 +117,6 @@ h4{
 	
     font-family:'Ubuntu', 'Source Sans Pro', sans-serif !important;
 }
-p{ line-height:10 px} 
 
 pre[class*="language-"] {
     /*border: none;
