@@ -111,7 +111,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Chapter2/" />
+    <link rel="next" href="matplotlib——cm选择颜色映射.html" />
     
     
     <link rel="prev" href="面向对象绘图.html" />
@@ -478,6 +478,19 @@
             
                     
                     图层顺序Zorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.24" data-path="matplotlib——cm选择颜色映射.html">
+            
+                <a href="matplotlib——cm选择颜色映射.html">
+            
+                    
+                    matplotlib.cm选择颜色映射
             
                 </a>
             
@@ -1349,7 +1362,7 @@
                                 <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x56FE;&#x5C42;&#x987A;&#x5E8F;zorder">&#x56FE;&#x5C42;&#x987A;&#x5E8F;Zorder</a></li></ul></div><a href="#&#x56FE;&#x5C42;&#x987A;&#x5E8F;zorder" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x56FE;&#x5C42;&#x987A;&#x5E8F;zorder"><a name="&#x56FE;&#x5C42;&#x987A;&#x5E8F;zorder" class="anchor-navigation-ex-anchor" href="#&#x56FE;&#x5C42;&#x987A;&#x5E8F;zorder"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56FE;&#x5C42;&#x987A;&#x5E8F;Zorder</h1>
 <p>Zorder&#x6F14;&#x793A;</p>
 <p>&#x827A;&#x672F;&#x5BB6;&#x7684;&#x7ED8;&#x753B;&#x987A;&#x5E8F;&#x662F;&#x7531;&#x4ED6;&#x4EEC;&#x7684; <code>zorder</code> &#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x6D6E;&#x70B9;&#x6570;&#x3002;&#x5177;&#x6709;&#x66F4;&#x9AD8; <code>zorder</code> &#x753B;&#x5728;&#x4E0A;&#x9762;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E; <code>zorder</code> . &#x9ED8;&#x8BA4;&#x503C;&#x53D6;&#x51B3;&#x4E8E;&#x827A;&#x672F;&#x5BB6;&#x7684;&#x7C7B;&#x578B;&#xFF1A;</p>
-<p><a href="img/image-20200801174813185.png" data-lightbox="6da6ed1d-b116-42ee-9929-e545cdae1ed2" data-title="image-20200801174813185"><img src="img/image-20200801174813185.png" alt="image-20200801174813185"></a></p>
+<p><a href="img/image-20200801174813185.png" data-lightbox="04eba2bf-a773-4391-a188-9ff35d11eef2" data-title="image-20200801174813185"><img src="img/image-20200801174813185.png" alt="image-20200801174813185"></a></p>
 <p>&#x5BF9;plotting&#x65B9;&#x6CD5;&#x7684;&#x4EFB;&#x4F55;&#x8C03;&#x7528;&#x90FD;&#x53EF;&#x4EE5;&#x663E;&#x5F0F;&#x5730;&#x4E3A;&#x8BE5;&#x7279;&#x5B9A;&#x9879;&#x7684;zorder&#x8BBE;&#x7F6E;&#x503C;&#x3002;</p>
 <pre class="language-"><code class="lang-python"><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
 <span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
@@ -1372,7 +1385,7 @@ ax2<span class="token punctuation">.</span>set_title<span class="token punctuati
 
 plt<span class="token punctuation">.</span>tight_layout<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<p><a href="img/sphx_glr_zorder_demo_001.png" data-lightbox="1e0472db-bed3-4374-b59a-063273892d37" data-title="sphx_glr_zorder_demo_001"><img src="img/sphx_glr_zorder_demo_001.png" alt="sphx_glr_zorder_demo_001"></a></p>
+<p><a href="img/sphx_glr_zorder_demo_001.png" data-lightbox="2ac2a81c-d55b-4875-b928-345e50848abd" data-title="sphx_glr_zorder_demo_001"><img src="img/sphx_glr_zorder_demo_001.png" alt="sphx_glr_zorder_demo_001"></a></p>
 <p>&#x8BB8;&#x591A;&#x521B;&#x5EFA;&#x53EF;&#x89C1;&#x5BF9;&#x8C61;&#x7684;&#x51FD;&#x6570;&#x90FD;&#x63A5;&#x53D7; <code>zorder</code> &#x53C2;&#x6570;&#x3002;</p>
 <pre class="language-"><code class="lang-python">x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">7.5</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
 plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">&apos;lines.linewidth&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">5</span>
@@ -1385,7 +1398,7 @@ l <span class="token operator">=</span> plt<span class="token punctuation">.</sp
 l<span class="token punctuation">.</span>set_zorder<span class="token punctuation">(</span><span class="token number">2.5</span><span class="token punctuation">)</span>  <span class="token comment"># legend between blue and orange line</span>
 plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<p><a href="img/sphx_glr_zorder_demo_002.png" data-lightbox="2d9b011b-e96a-430b-abfd-79a2ea27ae8d" data-title="sphx_glr_zorder_demo_002"><img src="img/sphx_glr_zorder_demo_002.png" alt="sphx_glr_zorder_demo_002"></a> </p>
+<p><a href="img/sphx_glr_zorder_demo_002.png" data-lightbox="97c00254-15b9-48fe-89bf-2e63702c5007" data-title="sphx_glr_zorder_demo_002"><img src="img/sphx_glr_zorder_demo_002.png" alt="sphx_glr_zorder_demo_002"></a> </p>
 <footer class="page-footer"><span class="copyright">  </span><span class="footer-modification">Update time&#xFF1A;
 2020-08-01 
 </span></footer>
@@ -1420,7 +1433,7 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
                 </a>
                 
                 
-                <a href="../Chapter2/" class="navigation navigation-next " aria-label="Next page: 折线图">
+                <a href="matplotlib——cm选择颜色映射.html" class="navigation navigation-next " aria-label="Next page: matplotlib.cm选择颜色映射">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1431,7 +1444,7 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"图层顺序Zorder","level":"2.1.23","depth":2,"next":{"title":"折线图","level":"3.1","depth":1,"path":"Chapter2/README.md","ref":"Chapter2/README.md","articles":[]},"previous":{"title":"面向对象绘图","level":"2.1.22","depth":2,"path":"Chapter1/面向对象绘图.md","ref":"Chapter1/面向对象绘图.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter1/图层顺序Zorder.md","mtime":"2020-08-01T09:52:00.416Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-01T12:33:45.987Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"图层顺序Zorder","level":"2.1.23","depth":2,"next":{"title":"matplotlib.cm选择颜色映射","level":"2.1.24","depth":2,"path":"Chapter1/matplotlib——cm选择颜色映射.md","ref":"Chapter1/matplotlib——cm选择颜色映射.md","articles":[]},"previous":{"title":"面向对象绘图","level":"2.1.22","depth":2,"path":"Chapter1/面向对象绘图.md","ref":"Chapter1/面向对象绘图.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","theme-comscore","anchors@^0.7.1","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","expandable-chapters","local-video@^1.0.1","anchor-navigation-ex@0.1.8","custom-favicon","todo@^0.1.3","hide-element","copy-code-button","tbfed-pagefooter","advanced-emoji","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":" ","modify_label":"Update time：","modify_format":"YYYY-MM-DD "},"prism":{"css":["prism-themes/themes/prism-vs.css"]},"disqus":{"useIdentifier":false,"shortName":"HG1227"},"styles":{"website":"styles/website.css"},"emphasize":{},"ace":{},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":"favicon.ico","lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"prism-themes":{},"custom-favicon":{},"local-video":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"template":"ace","unindent":true,"edit":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"HHG","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"python 学习记录","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":""}},"gitbook":"*","description":"。"},"file":{"path":"Chapter1/图层顺序Zorder.md","mtime":"2020-08-01T09:52:00.416Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-11T16:08:27.841Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

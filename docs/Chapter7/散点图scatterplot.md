@@ -128,6 +128,10 @@ seaborn.scatterplot(x=None, y=None,
 
 > 返回绘制所需的坐标
 
+`edgecolor` 设置轮廓色：
+
+> edgecolor=None 五轮廓色
+
 请参阅官方文档
 
 用线显示两个变量之间的关系以强调连续性。绘制带有一个分类变量的散点图，排列点以显示值的分布。
